@@ -5,7 +5,8 @@
 ##感激
 感谢以下的项目,排名不分先后
 
-* [app1](aishuai) 
+* [app1](电商)(aishuai) 
+* [pad1](订餐)(xiaocui) 
 
 ##关于作者
 
