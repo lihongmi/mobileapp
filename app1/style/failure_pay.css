@@ -1,0 +1,8 @@
+@charset "utf-8";
+/*支付报错页面 by chenpp 2014/2/10*/
+.failure_pay_cont{width:auto; height:auto; margin:0.6em 0.6em 0; background:#fff; box-shadow:1px 2px 2px #c7c7c7; padding:1em;}
+.red_tit{ color:#ff0000;}
+.failure_pay_word{ font-size:1.3em;color:#3f3f3f;}
+.failuer_tit{ width:6.2em; position:absolute; left:0;}
+.failure_word{ color:#a4a4a4; line-height:1.3em;margin-left:6.2em;}
+.failure_pay_cont .pailure_pay_but{ width:10em;display:inline-block; border-radius:6px; font-size:1.5em; padding:0.8em 0;}

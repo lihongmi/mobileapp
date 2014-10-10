@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style"  />
+<meta content="telephone=no" name="format-detection" />
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/user.css"/>
+</head>
+<body>
+	<div class="wrap" id="contentWrapper">
+    	<div class="header">
+        	<span class="feed_back" id="back"></span>
+        	<span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_btn_register">Registration</span>
+        </div>
+		<div class="Registration_cont">
+        	<ul>
+            	<li>
+            		<span class="fon_s10 inter_lang_font" langkey="lang_lable_account" >Account name</span>：
+					<input class="fon_s10 fon_c13 border_no "  name="" type="text" id="uesrName" />
+					<input type="hidden" id="usernameParam" value='false' />
+				</li>
+            	<li>
+            		<span class="fon_s10 inter_lang_font" langkey="lang_email">Mainbox</span>：
+					<input class="fon_s10 fon_c13 border_no "name="" type="text" id="email"/>
+					<input type="hidden" id="emailParam" value='false'/>
+				</li>
+            	<li>
+            		<span class="fon_s10 inter_lang_font" langkey="lang_lable_password">Password</span>：
+					<input class="fon_s10 fon_c13 border_no "name="" type="password" id="passWord" />
+					<input type="hidden" id="pwdParam" value='false'/>	
+				</li>
+            	<li>
+            		<span class="fon_s10 inter_lang_font" langkey="lang_confirm_password">Password</span>：
+					<input class="fon_s10 fon_c13 border_no "  name="" type="password" id="passWord2"/>
+					<input id="pwd2Param" value='false' type="hidden"/>
+				</li>
+            </ul>
+            <div class="Registration" style="margin-top:1.5em;" id="reBtn">
+               <button class="Re_btn s_btn2"><span class="fon_s6 inter_lang_font" langkey="lang_intro38">Agree User Agreement And Registration</span></button>
+            </div>
+            <p class="server txt_1" id="server">
+                <label class="fon_s7"><span class="inter_lang_font" langkey="lang_intro39">User Agreement</span></label>
+            </p>            
+		</div>
+    </div>
+</body>
+<script src="../../script/common/sea.js"></script>
+    <script>
+		seajs.use('../../script/page/user/registration', function(init) {
+            init.initPage();
+        });
+	</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>意见反馈</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/feedback.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body>
+    <div class="wrap" id="contentWrapper">
+    	<div class="header">
+        	<span class="feed_back" id="back"></span>
+        	<span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_feedback">Feedback</span>
+        	<span class=""><input class="inter_lang_button feed_btn s_btn2" type="button" id="submit" langkey="lang_intro26"/></span>
+        </div>
+        <div class="feed_cont">
+            <ul class="feed_ul">
+            	<li class="feed_ul_one">
+            		<p><span class="inter_lang_font" langkey="lang_intro10">Please leave your contact details, QQ / Email, thank you!</span></p>
+                	<input class="dord_no w270 fon_s11" type="text" placeholder="" id="user"/>
+                </li>
+                <li>
+                	<p><span class="inter_lang_font" langkey="lang_intro11">Please leave your comments, let the phone CooMall progress, Thank you!</span></p>
+                	<textarea maxlength="150" class="dord_no w270 h76 fon_s11" placeholder="" id="opinion"></textarea>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+    <script>
+		seajs.use('../../script/page/more/feedback', function(init) {
+            init.initPage();
+        });
+	</script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" href="../style/common.css">
+<link rel="stylesheet" href="../style/main.css">
+<link rel="stylesheet" href="../style/frame.css">
+<link rel="stylesheet" href="../style/layout.css">
+<link rel="stylesheet" href="../style/swipe.css">
+<link rel="stylesheet" href="../style/home.css">
+<title>Home</title>
+
+</head>
+
+<body>
+	<div id="contentWrapper" style="background-color:#FFFFFF;">
+		<div class="header posi_3">
+			<div class="Hlogo posi_2">
+				<img src="../images/Hlogo.png">
+			</div>
+			<div class="Hsearch posi_2">
+				<div class="Hsearch_k" id="searchButton">
+					<div class="search_ico posi_2">
+						<img src="../images/search_ico.png" />
+					</div>
+					<span class="search_word posi_2 inter_lang_font" id="serh" langkey="lang_search">search</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="Cont Home_cont" style="overflow-x: hidden;" id="coutList">
+			<div class="posi_r over_auto">
+				<div class="Hbanner" id="Hbanner" style="height: 12em;">
+				</div>
+	
+				<div class="Home_box posi_1 over_hidd" id="recommend">
+				</div>
+	
+				<div class="Home_box posi_1 over_hidd" id="new">
+				</div>
+	
+				<div class="Home_box posi_1 over_hidd" id="sale">
+				</div>
+			</div>
+		</div>
+		<div class="footer posi_3">
+			<ul id="footerMenu">
+				<li class="more_on">
+					<p>
+						<img src="../images/home.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_home">Home</span></p>
+				</li>
+				<li id="category">
+					<p>
+						<img src="../images/category.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_category">Category</span></p>
+				</li>
+				<li id="cart">
+					<p>
+						<img src="../images/cart.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_cart">Cart</span></p>
+				</li>
+				<li id="myMall">
+					<p>
+						<img src="../images/my_mall.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_mymall">My Mall</span></p>
+				</li>
+				<li id="more">
+					<p>
+						<img src="../images/more.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_more">More</span></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script src="../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../script/page/home', function(init) {
+		init.initPage();
+	});
+	function goTo(url){
+		var queryParam = url.substring(url.lastIndexOf("?") + 1);
+		window.localStorage.setItem("queryParam", queryParam);
+		
+		appFrame.open("productListAD", "html/product/product_list_ad.html");
+	}
+	function tStart(obj){
+		var pageX = window.event.targetTouches[0].pageX;
+		var pageY = window.event.targetTouches[0].pageY;
+		obj.setAttribute("sX", pageX);
+		obj.setAttribute("sY", pageY);
+		obj.setAttribute("isMove", 0);
+	}
+	function tMove(obj){
+		if(obj.getAttribute("isMove") == 1 ){
+			return;
+		}
+		var sX = obj.getAttribute("sX");
+		var sY = obj.getAttribute("sY");
+		var cX = window.event.targetTouches[0].pageX;
+		var cY = window.event.targetTouches[0].pageY;
+		var dist = Math.sqrt(Math.pow((sX - cX), 2) + Math.pow((sY - cY), 2));
+		if(dist > 20){
+			obj.setAttribute("isMove", 1);
+		}
+	}
+	function goToDetail(id, obj){
+		if(obj.getAttribute("isMove") == 1 ){
+			obj.setAttribute("isMove", 0);
+			return;
+		}
+		window.localStorage.setItem("proId", id);
+		appFrame.open("productDetail", "html/product/product_detail.html");
+	}
+</script>
+</html>

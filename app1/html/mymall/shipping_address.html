@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>Edit Shipping Address</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/address.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body> 
+<div id="contentWrapper">
+<div class="header posi_3">
+	<span class="feed_back" id="back"></span>
+    <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_new_address">New Address</span>
+    <span class="add_address s_btn7 inter_lang_font" id="addOver" langkey="lang_done">Add</span>
+</div>
+<div class="Cont Cont2">
+	<div class="addr_cont">
+    	<ul>
+        	<li>
+            	<span class="addr_tit inter_lang_font" langkey="lang_rn">Real Name</span> : 
+                <input name="" type="text" value="Mengshu Ming" class="addr_input" id="trueName">
+            </li>
+            <li>
+            	<span class="addr_tit inter_lang_font" langkey="lang_mb" onkeypress="return checkInput()">Mobilephone</span> :
+                <input name="" type="tel" value="15487645895" class="addr_input" id="mobile">
+            </li>
+            <li>
+            	<span class="addr_tit inter_lang_font" langkey="lang_province">Province</span> :
+                <select class="addr_input" id="provinceList">                	
+                </select>
+            </li>
+            <li>
+            	<span class="addr_tit inter_lang_font" langkey="lang_city">city</span>  :
+                <select class="addr_input" id="cityList">                	
+                </select>
+            </li>
+            <li>
+            	<span class="addr_tit addr_tit2 posi_2 inter_lang_font" langkey="lang_address_detail">Address:</span>
+                <textarea name="" cols="" rows="" class="addr_area" id="address">Haidian District, Beijing Zhongguancun Software Park, No. 8 Dongbeiwang Building 7 Building Xinwei</textarea>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+    <script>
+		seajs.use('../../script/page/mymall/shipping_address', function(init) {
+            init.initPage();
+        });
+        function checkInput(){
+		var keynum = window.event.which;
+		keychar = String.fromCharCode(keynum);
+		numcheck = /\d/;
+		return numcheck.test(keychar);
+	}
+	</script>
+</html>

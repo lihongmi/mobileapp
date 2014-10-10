@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>订单详情-确认收货</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css" />
+<link rel="stylesheet" type="text/css" href="../../style/frame.css">
+<link rel="stylesheet" type="text/css"
+	href="../../style/orderDetails.css" />
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body class="bg_c2">
+<div id="contentWrapper">
+	<div class="header">
+		<span class="feed_back" id="back"></span> <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_intro20">OConfirm the order.</span>
+	</div>
+	<div class="Cont" style="bottom: 4.3em;" id="orderListWrap">
+		<div class="bg_c1 shadow" id="address">
+		</div>
+		<div id="payCont">
+		</div>
+	</div>
+
+	<div class="posi_f qOrderDetailsFoot">
+		<ul>
+			<li class="fon_s7 fon_c22 fl"><span class="inter_lang_font" langkey="lang_total_amount">Total</span>:</li>
+			<li class=" fl"><span class="fon_s5 fon_c21">$<span id="orderTotal">0</span></span></li>
+		</ul>
+		<a class="db qOrderDetailsFoot_btn posi_a shadow_3" id="submitBtn"><span
+			class="fon_c6 fon_s12 inter_lang_font" langkey="lang_submit_order">Submit Order</span></a>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	seajs.use('../../script/page/pay/confirm_order', function(init) {
+		init.initPage();
+	});
+</script>
+</html>

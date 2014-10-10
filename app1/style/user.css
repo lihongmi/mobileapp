@@ -1,0 +1,76 @@
+.Registration_cont ul{
+					  height:18em;
+					  margin:0 0.4em;
+					  margin-top:0.6em;
+					  background-color:#fff;
+					  -webkit-box-shadow:1px 1px 1px rgba(0,0,0,0.2);
+	}
+
+.Registration_cont ul li{
+						 height:4.5em; 
+						 line-height:4.5em;
+						 padding-left:1.4em;
+						 border-bottom:1px solid #dedede;
+	}
+
+.border_no{
+		   border:none;
+		   width:12em;
+	}
+	
+.server{
+		height:4.7em;
+		line-height:4.7em;
+	}	
+	
+.server label{
+		margin-left:1em;
+		text-decoration:underline;
+	}	
+
+.server label a{
+		color:#000;
+		text-decoration:underline;
+	}
+
+.Registration{
+			  margin:0 1.3em;	
+	}
+
+.Re_btn{
+		width:100%;
+		height:4em;
+	}
+
+/*复选框--绿色选中状态*/
+.check{
+	   vertical-align:middle;
+	   width:1.4em;
+	   height:1.4em;
+	   border:1px solid #4c8600;
+	   display:inline-block;
+   	   background-image:linear-gradient( #77d200 , #549300 );
+	}
+.check_no{width:1.4em;height:1.4em; border:1px solid #acacac; display:inline-block;
+	   background-image: -webkit-gradient(linear, left top, left bottom, from( #eaeaea ), to( #dcdada ));
+	   background-image: -webkit-linear-gradient( #eaeaea , #dcdada );
+   	   background-image:         linear-gradient( #eaeaea , #dcdada );
+}	
+
+/*Login登录页面样式 by chenpp 2014/2/10*/
+.Login_cont{ background:#fff; border:1px solid #d7d7d7; border-bottom:none; box-shadow:1px 2px 2px #c7c7c7; margin:0.9em 0.8em 0;}
+.Login_cont li{ padding:1.3em;border-bottom:1px solid #dedede; position:relative;}
+.Login_tit{ color:#3f3f3f; font-size:1.4em;}
+.Login_text{ border:none; height:auto; font-size:1.3em; color:#404040; width:auto}
+.Login_button{ width:8em;display:inline-block; border-radius:6px; font-size:1.5em; padding:0.8em 0; margin:1em 0 0 0em;}
+#login_to{ margin-left:1em;}
+.check_cont{ line-height:1.4em; font-size:1.3em;}
+.check_cont a.check{ margin:0 0.6em 0 1.3em;}
+.history{float:right; margin-top:0.3em;}
+.sj_down{border-color: #aeaeae transparent transparent;height:0; font-size:0; line-height:0; border-style: solid;border-width:10px;}
+/*User agreement by chenpp 2014/2/21 */
+.U_agreement_cont{ width:90%; margin:1em auto 2em; font-family:"微软雅黑"; color:#666;}
+.U_agreement_word1{ color:#454545; font-size:1em; text-indent:2em; line-height:1.7em; font-weight:bold;}
+.U_agreement_cont .Utit{ text-indent:2em; line-height:2em;color:#454545; font-weight:bold;}
+.U_agreement_word2{ text-indent:2em; font-size:0.95em; line-height:1.7em;}
+.U_agreement_cont table{border-color:#666;}

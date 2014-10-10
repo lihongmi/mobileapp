@@ -1,0 +1,56 @@
+/* CSS Document */
+.feed_cont{ 
+		   height:90%;
+		   background-color:#dedede;
+		   position:absolute;
+		   top:4.3em;
+		   }
+
+.phone_info{
+			 height:3.3em; 
+			 line-height:3.3em;
+			 padding-left:1em;
+			}
+	
+.feed_ul{
+		 width:31em;
+		 height:100%;
+		 margin:0 0.5em 0.5em 0.5em;
+		 background:#fff;
+		 -moz-box-shadow:0px 3px 10px rgba(199,199,199,0.75);
+		 -webkit-box-shadow:0px 3px 10px rgba(199,199,199,0.75); 
+		 box-shadow:0px 3px 10px rgba(199,199,199,0.75);
+	}	
+	
+.feed_ul li{
+			line-height:1.2em;	
+			padding:0 0.6em;
+			padding-top:0.7em;
+	}	
+	
+.feed_ul li.feed_ul_one{
+						padding-top:0.3em;
+						padding-bottom:1em;
+						border-bottom:1px solid #dedede;
+
+	}
+.feed_ul li.feed_ul_one input{ height:2em;}	
+.feed_ul li textarea{
+	
+}	
+	
+.feed_ul li p{margin:1em 0em;}}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

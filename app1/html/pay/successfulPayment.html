@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+    <title>订单详情-确认收货</title>
+    <link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../style/orderDetails.css"/>
+    <link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+    <script src="../../script/common/sea.js"></script>
+</head>
+
+<body class="bg_c2">
+<div id="contentWrapper">
+    <div class="header">
+        <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_msg_pay_success" >Successful payment</span>
+    </div>
+	<div class="qOrderDetailsBox shadow qOrderDetailsBox_no">
+    	<h1 class="qOrderDetailsBox_tit" id="isSuccessful"></h1>
+        <dl class="posi_r">
+        	<dt class="posi_a qOrderDetailsBox_tit4"><span class="fon_c17 fon_s12 inter_lang_font" langkey="lang_sa">Shipping Address</span>:</dt>
+            <dd class="qOrderDetailsBox_de3 word_all">
+                <span class="fon_s10 fon_c13" id="pay_addr"></span>
+           </dd>
+        </dl>
+        <p class="qOrderDetailsBox_tit5 pt1"><span class="fon_s12 fon_c17" id="total"><span class="inter_lang_font" langkey="lang_product_price">Price</span>: $69.20</span></p>
+        <div class="pt1 txt_1 qBox_1">
+        	<a class="dib s_btn1 rad_1 qBtn_1"><span class="fon_c20 fon_s5 inter_lang_font" id="ToOrder" langkey="lang_order_history">Order History</span></a>
+            <a class="dib s_btn2 qBtn_1"><span class="fon_c6 fon_s5 inter_lang_font" id="ToShop" langkey="lang_continue_shipping">Continue shopping</span></a>
+        </div>
+        <div class="pt1 txt_1 qBox_1" id="againPay">
+        	<a class="dib s_btn1 rad_1 qBtn_1" style="visibility:hidden;"><span class="fon_c20 fon_s5 inter_lang_font" langkey="lang_order_history">Order History</span></a>
+            <a class="dib s_btn2 qBtn_1" id="ToPay"><span class="fon_c6 fon_s5 inter_lang_font" langkey="lang_btn_repay">重新支付</span></a>
+        </div>
+    </div>
+    </div>
+</body>
+    <script>
+		seajs.use('../../script/page/pay/successfulPayment', function(init) {
+            init.initPage();
+        });
+	</script>
+</html>

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*商品类别页面样式 by chenpp 2012/2/10*/
+body{ background:#dedede;}
+.Category_cont{ width:96%; height:auto; margin:0 auto; background:url(../images/category_bg.png) repeat; border-left:1px solid #c7c7c7; border-right:1px solid #c7c7c7; box-shadow:1px 1px 2px #d7d7d7;}
+.Category_cont li{ height:5.3em; padding:0.9em 0 0.8em; position:relative; background:url(../images/category_b_line.png) center bottom no-repeat;}
+.Category_cont .Category_img{ width:4.2em; left:2.5em;}
+.Category_img img{ width:100%; height:100%;}
+.Category_tit{color:#292929; font-size:1.6em; vertical-align:middle; left:5em; top:1.5em;}
+/*商品类别-list页面样式*/
+.Category_List_cont li{ height:auto;padding:1.7em 0;}
+.Category_Ltit{ color:#292929; font-size:1.6em; vertical-align:middle; margin-left:2em;}
+.Category_List_cont a.menu_right{right:2.5em; position:absolute;}

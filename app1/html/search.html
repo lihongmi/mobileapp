@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>search</title>
+
+<link rel="stylesheet" href="../style/common.css">
+<link rel="stylesheet" href="../style/main.css">
+<link rel="stylesheet" href="../style/frame.css">
+<link rel="stylesheet" href="../style/layout.css">
+<link rel="stylesheet" href="../style/search.css">
+</head>
+
+<body>
+	<div id="contentWrapper">
+		<div class="header posi_3">
+			<a href="#" class="feed_back" id="backButton"></a> <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_search">Search</span>
+		</div>
+		<div class="Cont Cont2">
+			<div class="search_int over_hidd">
+				<input name="" type="search" class="search_text fl" id="keywordsInput" />
+				<input type="button" class="search_but fr db" id="searchBtn" />
+			</div>
+			<div class="search_list dn" id="keywordList">
+				<ul id="keyList">
+				</ul>
+				<p class="txt_1" id="emptyHistory">
+					<input name="" type="button" class="s_btn1 search_empty inter_lang_button" langkey="lang_empty" 
+						value="Empty records" id="emptyBtn" />
+				</p>
+			</div>
+			<div class="search_list dn mt100" id="noKeyword">
+		    	<h2><span class="inter_lang_font" langkey="lang_intro32" >Search record is empty</span></h2>
+		        <p class="txt_1"><img src="../images/search_empty.png"></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../script/page/search', function(init) {
+		init.initPage();
+	});
+</script>
+</html>

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*首页样式 by chenpp 2014/2/8*/
+.Hlogo{ width:8.9em;left:0.42em;}
+.Hlogo img{width:8.9em;}
+.Hsearch{ height:2.9em;left:9.8em; margin-top:0.8em; width:auto; right:0.89em;}
+.Hsearch_k{ width:100%; background:#fff; left:0; top:0; height:2.9em; line-height:2.9em;}
+.search_ico{ width:1.6em; left:0.8em; top:0.7em; height:1.8em; display:inline-block;}
+.search_ico img{ vertical-align:top;}
+.search_word{ display:inline-block; height:2.9em; line-height:2.9em; color:#bfbfbf; left:3em; font-size:1.1em;}
+.Home_cont{ top:4.3em; height:auto;overflow-y:auto;}
+.Hbanner{height: auto;overflow: hidden; position: relative; width: 100%;}
+.Hbanner_list img{ display:block; width:100%;}
+.cor_bar{ height:0.21em;position: absolute; width:100%; z-index:9; bottom:0;}
+.cor_bar ul{ height:0.21em; overflow:hidden;}
+.cor_bar li{ width:20%;height:0.21em; float:left;}
+.cor_bar1{ background:#e84346;}
+.cor_bar2{ background:#ffd12c;}
+.cor_bar3{ background:#688bc3;}
+.cor_bar4{ background:#5fd7ff;}
+.cor_bar5{ background:#ff9bfe;}
+.Home_box{ margin:0.48em 0.4em 0.48em; height:auto; width:31.2em; height:18.9em; float:left;}
+.Home_box_tit{ border:1px solid #cecece; border-bottom:1px solid #e1e1e1; background:#f5f5f5; height:2.6em; line-height:2.6em; color:#989898; padding:0 1em; font-size:1.2em; width:23.8em;}
+.Home_box_tit ul{ height:0.8em; right:1em; top:1em; width:auto;}
+.Home_box_tit ul li{ width:0.8em; height:0.8em; float:left; display:inline-block;  margin-left:0.4em; position:relative;}
+.Home_box_tit ul li a{ width:0.8em; height:0.8em; border-radius:0.8em; border:1px solid #d9d9d9; display:inline-block; top:0; position:absolute; background:#e5e5e5; box-shadow:inset 1px 1px 1px #d7d7d7;}
+.Home_box_tit ul li a.Hbut_on,.Home_box_tit ul li a:active{ background:#f1f1f1;background-image: -webkit-gradient(linear, left top, left bottom, from( #fefefe ), to( #e5e5e5 ));background-image: -webkit-linear-gradient( #fefefe , #e5e5e5);background-image:linear-gradient( #fefefe , #e5e5e5 ); box-shadow:none;}
+.Home_box_cont{border:1px solid #cecece; border-top:none; background:#fff; height:16em; display:inline-block; left:0; top:0;}
+.Hbox_cont_L{ width:17em; height:auto; top:0; left:0; }
+.Hbox_cont_R{ width:13.9em;border-left:1px solid #f3f3f3; height:16em;}
+.Hbox_cont_L_t{ height:auto;border-bottom:1px solid #f3f3f3; padding:0.78em 0.5em;float:left; width:15.8em; height:6.4em;}
+.Bline_no{ border-bottom:none;}
+.Home_box_cont a{ display:inline-block; width:100%; height:100%;}
+.Hbox_cont_L a{ color:#181818;} 
+.Home_box_cont img{ width:100%;}
+.Hbox_cont_L .Hbox_img_s{ width:6em; float:right; color:#000;}
+.Hbox_cont_L .Hbox_img_s img{ width:100%;}
+.Hbox_cont_L .Hbox_word_s{ width:9.3em; height:100%; float:left;}
+.Hbox_cont_L .Hbox_word_s span{ font-size:1.5em; float:left; padding-left:0.5em; max-height:3.8em; overflow:hidden; line-height:1.9em;}
+.Hbox_cont_R .Hbox_img_b{ width:8.4em; margin:0.8em auto 0;}
+.Hbox_cont_R a{ color:#606060; font-size:1.2em;}
+.Hbox_cont_R h3{font-weight:normal;max-height: 3.3em; margin-top:0.5em;}
+.Hbox_cont_R h3 a{ text-align:left; width:95%; color:#181818;line-height:1.5em; overflow:hidden; padding-left:0.5em;max-height: 3.3em;}
+.Hbox_word_b{ padding:0 0.5em; margin-bottom:0.5em; height:3em; overflow:hidden; line-height:1.5em; margin-top:0.5em;}
+/*产品价格 by chenpp 2014/2/19 后期调整*/
+.Hprice_tit{ max-height:4.5em; overflow:hidden; line-height:1.5em; padding:0 0.5em;}
+.Hprice_new{ font-size:1.5em; color:#f00;padding-left:0.3em;}
+.Hprice_old{ font-size:1em; color:#676767; text-decoration:line-through;padding-left:0.5em;}
+.Hbox_cont_R .Hprice_old{ margin-bottom:0.5em;}

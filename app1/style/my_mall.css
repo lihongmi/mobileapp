@@ -1,0 +1,308 @@
+/* CSS Document */
+
+/*my_mall*/
+.my_mall_btn{
+			width:4.7em;
+			height:2.7em;
+			display:block;
+			position:absolute;
+			left:0.6em;
+			top:0.7em;
+			border:#ad0000 1px solid; -moz-border-radius:6px; 
+			-webkit-border-radius:6px; border-radius:6px; 
+			background-color:#ff0000;
+			-webkit-box-shadow:inset 1px 1px 1px rgba(255,255,255,.5),inset -1px -1px 1px rgba(255,255,255,.5);
+			box-shadow:inset 1px 1px 1px rgba(255,255,255,.5),inset -1px -1px 1px rgba(255,255,255,.5);
+			background-image: -webkit-gradient(linear, left top, left bottom, from( #ffc600 ), to( #ffaf08 ));
+			background-image: -webkit-linear-gradient( #ffc600 , #ffaf08 );
+			background-image:         linear-gradient( #ffc600 , #ffaf08 );
+			color:#fff;
+			cursor:pointer;	
+			font-family:Arial, Helvetica, sans-serif;
+	}
+
+.my_mall_btn img{
+				 width:1.8em;
+				 margin-top:0.4em;
+	}
+
+.my_maii_buoy{
+			  width:2em;
+			  height:1.3em;
+			  display:block;
+			  position:absolute;
+			  right:-0.3em;
+			  top:-0.2em;
+			  background-color:#fc8203;
+			  -webkit-border-radius:6px; 
+			  border-radius:6px;
+			  -webkit-box-shadow:inset 0px -1px 1px rgba(0,0,0,0.5);
+	}
+
+.my_mall_user{
+			  height:12.1em;
+			  background:url(../images/my_mall_bg.png) no-repeat;
+			  background-size:cover;		 
+	}
+
+.my_mall_user dl{
+				 padding-top:4.2em;
+				 margin-left:1.2em;
+	}
+
+.my_mall_user dl dt{
+					float:left;
+					margin-right:2.5em;
+	}
+
+.my_mall_user dl dd{
+					float:left;
+	}
+
+.my_mall_user dl dt img{
+						width:6.3em;
+						height:6.3em;
+						border-radius:10em;
+						border:0.3em solid #fff; 
+	}
+
+.my_mall_user dl dd p{
+					  color:#fff;
+	}
+
+
+.my_mall_cont{
+			  position:absolute;
+			  top:16.4em;
+			  bottom:4.7em;
+			  background-color:#dedede;
+			  width:100%;
+			  height:auto;
+			  overflow-y:auto;
+	}
+
+.my_mall_cont ul{
+			  margin:0 0.65em;
+			  margin-top:0.5em;
+			  height:34.5em;
+			  width:30.7em;
+			  background-color:#f5f5f5;
+			  border-radius:6px;
+			  -moz-box-shadow:0px 3px 10px rgba(199,199,199,0.75);
+			  -webkit-box-shadow:0px 3px 10px rgba(199,199,199,0.75); 
+			  box-shadow:0px 3px 10px rgba(199,199,199,0.75);
+	}
+
+.my_mall_cont ul li{
+			 	 height:4.9em;
+				 line-height:4.9em;
+				 border-top:1px #fff solid;
+				 border-bottom:1px solid #e3e3e3;
+	}
+
+.my_mall_cont ul li img{
+					width:2.1em;
+	}
+
+.my_mall_cont ul li.first{
+		border-top:none;
+	}
+.my_mall_cont ul li.last{
+		border-bottom:none;
+	}
+.menu_left{
+		   margin-left:1.4em;
+		   margin-right:1.6em;
+	}
+
+.menu_right{
+		   margin-right:1.6em;
+		   float:right;
+	}
+	
+#myMallWelcome{
+	padding-top:2em;
+	padding-bottom:1em;
+}
+
+#toLogin{
+	color:#a9a9a9;
+	border-bottom:1px dashed #a9a9a9;
+	cursor:pointer;
+}
+
+/*My Favorites*/
+.Favorites_cont{
+			 	width:100%;
+				position:absolute;
+				top:4.3em;
+				bottom:0;
+				overflow:auto;
+	}
+
+#waitPay{
+
+}
+
+.Favorites_cont dl{
+				   margin:0.6em;
+				   background-color:#fff;
+				   min-height:8.6em;
+				   -moz-box-shadow:0px 3px 10px rgba(199,199,199,0.75);
+			 	   -webkit-box-shadow:0px 3px 10px rgba(199,199,199,0.75); 
+			 	   box-shadow:0px 3px 10px rgba(199,199,199,0.75);
+				   overflow:hidden;
+	}
+
+.Favorites_cont dl dt{
+					  width:7.3em;
+					  height:7.3em;
+					  -moz-box-shadow:0px 1px 5px rgba(199,199,199,0.75);
+			 	  	  -webkit-box-shadow:0px 1px 5px rgba(199,199,199,0.75); 
+			 	      box-shadow:0px 1px 5px rgba(199,199,199,0.75);
+					  margin-top:0.5em;
+					  margin-left:0.6em;
+					  float:left;
+	}
+
+.Favorites_cont dl dt img{
+						width:7.3em;
+					    height:7.3em;
+	}
+
+.Favorites_cont dl dd{
+					  margin-left:0.9em;
+					  line-height:1.6em;
+					  float:left;
+					  width:18em;
+	}
+
+.fa_cont_d1{
+			margin-top:0.6em; 
+			color:#3f3f3f;
+	}
+	
+.fa_cont_d2{
+			color:#ff0000;
+	}
+	
+.fa_cont_d3{
+			color:#c9c9c9;
+	}		
+
+.fa_list_arrow{
+			   width:1.8em;
+			   right:2.3em;
+			   top:3.2em;
+	}
+
+/*Category_ListRanking0208*/
+.search_parent{
+		display:block;
+		margin-left:4.3em;
+	    margin-right:1.5em;
+		height:2.4em;
+		line-height:2.4em;
+		width:auto;
+		text-align:left;
+		text-indent:2.2em;
+		background:url(../images/in_search_icon.png) 0.6em center no-repeat #fff;
+	    background-size:1em 1em;
+	    color:#a7a7a7;
+	    margin-top:0.7em;
+	}
+
+.search_cont{
+			 top:7.8em;
+	}
+
+.search_way{
+			height:3.5em;
+			line-height:3.5em;
+			background-image: -webkit-gradient(linear, left top, left bottom, from( #f8f8f8 ), to( #eaeaea ));
+			background-image: -webkit-linear-gradient( #f8f8f8 , #eaeaea );
+			background-image:         linear-gradient( #f8f8f8 , #eaeaea );
+			border-bottom:1px solid #dcdcdc;
+			z-index:3;
+	}
+	
+.search_way ul li{
+					width:24.6%;
+					float:left;
+					text-align:center;
+					height:3.5em;
+					line-height:3.5em;
+					border-right:1px solid #fff;
+					border-left:1px solid #d4d4d4;
+	}
+
+.search_way ul li.list_on{
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #cccccc ),color-stop(0.4,#eeeeee), color-stop(1, #f8f8f8 ));
+	}
+
+.search_way ul li.first{
+						border-left:none;
+	}
+
+.search_way ul li.last{
+						border-right:none;
+	}
+	
+.search_way ul li img{
+						width:0.7em;
+						margin-left:0.4em;
+	}
+
+
+.search_way p.search_line{
+			 height:0.2em;
+			 width:24.7%;
+			 background-color:#ff0000;
+			 position:absolute;
+			 bottom:0;
+	}
+
+.search_way p.search_line span{
+					position:absolute;
+					bottom:-0.7em;
+					left:46%;
+					border:0.4em solid transparent; 
+					border-top:0.4em solid #ff0000; 
+					width:0; 
+					height:0; 
+					z-index:999;
+	}
+
+.search_cont_box{
+				 width:auto;
+				 height:auto;
+				 overflow:hidden;
+				 border-bottom:1px solid #dedede;
+				 margin:0 0.4em;
+	}
+
+.search_cont dl{
+				margin:0;
+				padding:0.7em;
+	}
+
+.search_way_btn{
+				height:2.3em; 
+				width:4.8em;
+				border-radius:0.3em;
+				margin-left:0.4em;
+	}
+
+.search_way span input.input_text{
+					   width:3.9em;
+					   height:2.3em;
+					   padding-left:2.1em;
+					   background:url(../images/$.png) no-repeat 0.6em center #fff;
+					   background-size:0.75em 1.1em;
+					   color:#a7a7a7;
+	}
+
+/*No Waiting Payment Orders by chenpp 2014/2/21 */
+.No_payment_img{ margin-top:10em;}
+.No_payment_img img{ width:10em;}
+.No_payment_word{ font-size:1.5em; color:#a4a4a4; margin:1.8em 0 15em 0;}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>goods details</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css" />
+<link rel="stylesheet" type="text/css" href="../../style/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css" />
+<link rel="stylesheet" type="text/css" href="../../style/frame.css">
+<link rel="stylesheet" type="text/css" href="../../style/scroll.css">
+<link rel="stylesheet" type="text/css"
+	href="../../style/goods_details.css" />
+
+</head>
+
+<body>
+	<div class="wrap" id="contentWrapper">
+		<div class="header">
+			<span class="feed_back"></span> <span
+				class="fon_s10 fon_c6 search_parent inter_lang_font" id="searchButton" langkey="lang_search">search</span>
+		</div>
+		<!--goods details-->
+		<div class="Favorites_cont" style="overflow: hidden;" id="productListWrapper">
+			<div class="goodsDetails_cont" id="listContent">
+				<ul id="productList" class="clearfix">
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../../script/page/product/product_list_ad', function(init) {
+		init.initPage();
+	});
+	
+	function tStart(obj){
+		var pageX = window.event.targetTouches[0].pageX;
+		var pageY = window.event.targetTouches[0].pageY;
+		obj.setAttribute("sX", pageX);
+		obj.setAttribute("sY", pageY);
+		obj.setAttribute("isMove", 0);
+	}
+	function tMove(obj){
+		if(obj.getAttribute("isMove") == 1 ){
+			return;
+		}
+		var sX = obj.getAttribute("sX");
+		var sY = obj.getAttribute("sY");
+		var cX = window.event.targetTouches[0].pageX;
+		var cY = window.event.targetTouches[0].pageY;
+		var dist = Math.sqrt(Math.pow((sX - cX), 2) + Math.pow((sY - cY), 2));
+		if(dist > 20){
+			obj.setAttribute("isMove", 1);
+		}
+	}
+	function showDetail(id, obj){
+		if(obj.getAttribute("isMove") == 1 ){
+			obj.setAttribute("isMove", 0);
+			return;
+		}
+		window.localStorage.setItem("proId", id);
+		appFrame.open("productDetail", "html/product/product_detail.html");
+	}
+</script>
+</html>

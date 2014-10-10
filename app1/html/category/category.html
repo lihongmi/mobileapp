@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style"  />
+<meta content="telephone=no" name="format-detection" />
+<title>Category</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css" />
+<link rel="stylesheet" type="text/css" href="../../style/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../style/category.css" />
+<link rel="stylesheet" type="text/css" href="../../style/frame.css">
+<link rel="stylesheet" type="text/css" href="../../style/scroll.css">
+</head>
+
+<body>
+	<div id="contentWrapper">
+	<div class="header posi_3">
+       	<span class="feed_back dn" id="backBtn"></span>
+		<span class="fon_s3 fon_c6 inter_lang_font" id="headerTitle" langkey="lang_nav_category">Category</span>
+	</div>
+	<div class="Cont" id="categoryList">
+		<div>
+			<div class="Category_cont" id="categoryLv1">
+			</div>
+			<div class="Category_cont dn" id="categoryLv2">
+			</div>
+			<div class="Category_cont dn" id="categoryLv3">
+			</div>
+		</div>
+	</div>
+	<div class="footer posi_3">
+		<ul id="footerMenu">
+			<li id="home">
+				<p>
+					<img src="../../images/home.png" />
+				</p>
+				<p><span class="inter_lang_font" langkey="lang_nav_home">Home</span></p>
+			</li>
+			<li id="category" class="more_on">
+				<p>
+					<img src="../../images/category.png" />
+				</p>
+				<p><span class="inter_lang_font" langkey="lang_nav_category">Category</span></p>
+			</li>
+			<li id="cart">
+				<p>
+					<img src="../../images/cart.png" />
+				</p>
+				<p><span class="inter_lang_font" langkey="lang_nav_cart">Cart</span></p>
+			</li>
+			<li id="myMall">
+				<p>
+					<img src="../../images/my_mall.png" />
+				</p>
+				<p><span class="inter_lang_font" langkey="lang_nav_mymall">My Mall</span></p>
+			</li>
+			<li id="more">
+				<p>
+					<img src="../../images/more.png" />
+				</p>
+				<p><span class="inter_lang_font" langkey="lang_nav_more">More</span></p>
+			</li>
+		</ul>
+	</div>
+	</div>
+</body>
+<script src="../../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../../script/page/category/category', function(init) {
+		init.initPage();
+	});
+</script>
+</html>

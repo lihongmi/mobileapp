@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>CooMall app index page</title>
+</head>
+<body>
+	<div id="contentWrapper" style="background-color:#FFFFFF;"><button onclick="testCover()">AAAAAA</button></div>
+</body>
+    <script src="../script/common/sea.js"></script>
+    <script>
+		seajs.use('../script/page/index', function(init) {
+//            init.initPage();
+			
+        });
+		function testCover(){
+			appFrame.showShadowCover(false, 0.5);
+			setTimeout(function(){appFrame.closeShadowCover();}, 3000);
+		}
+	</script>
+</html>

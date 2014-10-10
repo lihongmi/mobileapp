@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>Waiting Payment Orders</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/scroll.css"/>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body>
+	<div class="wrap" id="contentWrapper">
+    	<div class="header">
+        	<span class="feed_back" id="back"></span>
+        	<span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_unreceipted_orders">waiting Reveiving Orders</span>
+        </div>	
+        <div class="Favorites_cont" id="waitingReveivWrap">
+	        <div id="waitingReveiv">
+	        </div>
+        </div>
+    </div>
+</body>
+    <script>
+		seajs.use('../../script/page/mymall/waiting_reveiving_orders', function(init) {
+            init.initPage();
+        });
+        function toOrderDetail( orderId ){                  
+			window.localStorage['orderId']=orderId;
+			appFrame.open('order_details','html/mymall/order_details.html');
+		}
+	</script>
+</html>

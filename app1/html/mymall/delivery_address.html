@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>Delivery Address</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/address.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body> 
+<div id="contentWrapper">
+<div class="header posi_3">
+	<a href="#" class="feed_back" id="back"></a>
+    <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_shipping_address">Shipping Addresses</span>
+    <span class="add_address s_btn7 inter_lang_font" langkey="lang_add" id="addNewAddress">Added</span>
+</div>
+<div class="Favorites_cont" style="overflow:hidden;">
+	<div class="deli_addr_cont" style="margin:0;overflow:auto">
+    	<ul id="shipAddress" >
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+    <script>
+		seajs.use('../../script/page/mymall/delivery_address', function(init) {
+            init.initPage();
+        });
+	</script>
+</html>

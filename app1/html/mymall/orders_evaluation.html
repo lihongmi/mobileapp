@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+    <title>评价</title>
+	<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+	<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+	<link rel="stylesheet" type="text/css" href="../../style/orderDetails.css"/>
+	<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+	<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+    <script src="../../script/common/sea.js"></script>
+</head>
+<body class="bg_c2">
+<div style="top: 0;bottom: 0;position: absolute;width: 100%;">
+    <div class="header">
+        <span class="feed_back" id="back"></span>
+        <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_order_evalue">Orders Evaluation</span>
+        <span><input class="inter_lang_button feed_btn s_btn2" type="button" id="submit" langkey="lang_intro26"/></span>
+    </div>
+    <div class="Favorites_cont">
+	    <ul class="qBox_6 bg_c1 shadow">
+	    	<li class="qOrderDetailsBox_line qConBox_7 posi_r">
+	            <span class="fon_s10 fon_c23 inter_lang_font" langkey="lang_seller_shipping_attitide">Seller Service Attitude</span>
+	            <ul class="posi_a qConBox_8" id="starOne">
+	                <li class="dib qStar "></li> 
+	                <li class="dib qStar  ml1"></li> 
+	                <li class="dib qStar ml1"></li> 
+	                <li class="dib qStar ml1"></li> 
+	                <li class="dib qStar ml1"></li>
+	            </ul>
+	        </li>
+	    	<li class="qOrderDetailsBox_line qConBox_7 posi_r">
+	            <span class="fon_s10 fon_c23 inter_lang_font" langkey="lang_seller_shipping_speed">Seller Shipping Speed</span>
+	            <ul class="posi_a qConBox_8" id="starTwo">
+	                <li class="dib qStar "></li> 
+	                <li class="dib qStar  ml1"></li> 
+	                <li class="dib qStar ml1"></li> 
+	                <li class="dib qStar ml1"></li> 
+	                <li class="dib qStar ml1"></li>
+	            </ul>
+	        </li>
+	    	<li class="qConBox_7 posi_r">
+	            <span class="fon_s10 fon_c23 inter_lang_font" langkey="lang_logisttics_speed">Logistics Speed</span>
+	            <ul class="posi_a qConBox_8" id="starThree">
+	                <li class="dib qStar "></li> 
+	                <li class="dib qStar  ml1"></li> 
+	                <li class="dib qStar ml1"></li> 
+	                <li class="dib qStar ml1"></li> 
+	                <li class="dib qStar ml1"></li>
+	            </ul>
+	        </li>
+	    </ul>
+	    <ul class="qBox_6 bg_c1 shadow qPt_1" id="goodsEv">
+		</ul>    
+	    <div class="qBox_6 bg_c1 shadow posi_r">
+	    	<div class="qConBox_7" id="isAnony"><span class="fon_s10 fon_c23 inter_lang_font" langkey="lang_anonymous_evalue">Seller Shipping Speed</span> <div class="posi_a qCheckBox qCheckBoxOn"></div></div>
+	    </div>
+    </div>
+   </div>
+</body>
+    <script>
+		seajs.use('../../script/page/mymall/orders_evaluation', function(init) {
+            init.initPage();
+        });
+        function GoodsEv(num,id){
+			if(num==1){
+				$('#good'+id).find('li').eq(0).addClass('qConBoxOn').siblings('li').removeClass('qConBoxOn');
+				$('#good'+id).attr('good-ev',1);
+			}else if(num==0){
+				$('#good'+id).find('li').eq(1).addClass('qConBoxOn').siblings('li').removeClass('qConBoxOn');
+				$('#good'+id).attr('good-ev',0);
+			}else{
+				$('#good'+id).find('li').eq(2).addClass('qConBoxOn').siblings('li').removeClass('qConBoxOn');
+				$('#good'+id).attr('good-ev',-1);
+			}
+		}
+		/*function fscrollTO(obj){
+			window.scrollTo(0, obj.getAttribute("sTop") + obj.getAttribute("sHeight"));
+			return false;
+		}*/
+	</script>
+</html>

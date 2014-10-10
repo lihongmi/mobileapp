@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* goods details页面 by chenp 2014/2/18 后补充页面*/
+.goodsDetails_cont{ width:96%; margin:0 auto 0; overflow:hidden;font-family:Arial;padding-top:1em;}
+.goodsDetails_cont li{height:auto; margin:0 1.5% 1em; float:left;}
+.goodsDetails_cont .goodsD_img{border:1px solid #c0c0c0;}
+.goodsDetails_cont .goodsD_img img{ width: 14.2em;height: 14.2em;}
+.goodsDetails_cont .goodsD_img a{ display:inline-block; width:100%;}
+.goodsD_Tbg{ height:3.7em; background:#000; bottom:0em; width:100%;}
+.goodsd_tit{ height:3.5em;padding:0 0.5em;text-align:left;bottom:0em; color:#fff; font-size:1em; overflow:hidden; line-height:1.7em;}
+.goodsd_tit a{ color:#fff;}
+.goodsD_price{ padding:0.5em 0 0 0.5em; }
+.price_new{ color:#f00; font-weight:bold; font-size:1.5em;}
+.price_old{ color:#898989; font-weight:bold; font-size:1em; text-decoration:line-through;}
+.goodsD_Snums{ color:#a4a4a4; font-size:0.9em;}

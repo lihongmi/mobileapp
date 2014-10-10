@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+div._shadow_cover_{
+	text-align:center;
+	-webkit-user-select:​ none;
+}
+div.loading-bg{
+	background-image: url(img/640loading-b.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 10em;
+	height: 10em;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+div.loading-img{
+	background-image: url(img/640loading.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 5.5em;
+	-webkit-animation-name: circle;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+}
+@-webkit-keyframes circle{
+	0%{
+		-webkit-transform:rotate(0deg); 
+	}
+	50%{
+		-webkit-transform:rotate(180deg); 
+	}
+	100%{
+		-webkit-transform:rotate(360deg); 
+	}
+}
+div.loading-word{
+	display: none;
+	color: #FFFFFF;
+	font-size: 1em;
+	line-height: 3em;
+	font-weight:bold;
+	-webkit-user-select:​ none;
+}
+
+div._confirm_wrapper_{
+	position:absolute;
+	left: 1.5em;
+	right: 1.5em;
+	border: 1px solid #FFFFFF;
+}
+div.cf_header{
+	background-color:#DDDDDD;
+	height: 3.6em;
+	border-bottom: 1px solid #BDBDBD;
+}
+div.cf_header span{
+	display:inline-block;
+	height: 3.6em;
+	line-height: 4em;
+}
+div.cf_header_icon{
+	
+}
+b.cf_header_text{
+	font-size: 1.2em;
+	padding-left: .7em;
+}
+ul.cf_select_list{
+	list-style: none;
+}
+span.cf_list_text{
+	font-size: 1.2em;
+}
+ul.cf_select_list li{
+	padding-left: .7em;
+	background-color: #F1F1F1;
+	height: 4em;
+	border-top: 1px solid #DDDDDD;
+	color: #747474;
+	line-height: 4.2em;
+}
+ul.cf_select_list li:nth-child(1){
+	border-top: 1px solid #BDBDBD;
+}
+ul.cf_select_list li.down{
+	background-color: #E0E0E0;
+}
+div.cf_confirm{
+	background-color: #F1F1F1;
+}
+div.cf_confirm p{
+	padding: 2em; 
+	font-size: 1.2em;
+}
+div.cf_button_list{
+	height: 4em;
+	border-top: 1px solid #BDBDBD;
+}
+div.cf_button_list div{
+	float: left;
+	text-align: center;
+	width: 49.8%;
+	line-height: 2.7em;
+	font-size: 1.5em;
+}
+div.cf_button_list div:FIRST-CHILD{
+	border-right: 1px solid #BDBDBD;
+	color: #FF0000;
+}
+div._tooltip_{
+	position:absolute;
+	width:100%;
+	height:100%;
+ 	display: -webkit-box;
+ 	-webkit-box-orient: horizontal;
+ 	-webkit-box-pack: center;
+ 	-webkit-box-align: center;
+}
+div._tooltip_center_{
+	background-color:#000000;
+	opacity: .7;
+	max-width: 28em;
+	padding: 1em;
+	color: #FFFFFF;
+}

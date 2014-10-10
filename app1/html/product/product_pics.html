@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style"  />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/main.css">
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/swipe.css"/>
+<title>Search</title>
+<style type="text/css">
+#productPicsWrapper{
+ 	display: -webkit-box;
+ 	-webkit-box-orient: horizontal;
+ 	-webkit-box-pack: center;
+ 	-webkit-box-align: center;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrap" id="contentWrapper">
+    	<div class="header">
+        	<span class="feed_back"></span>
+        </div>	
+        <div class="Cont Cont2" id="productPicsWrapper">
+	        <div id="productPics" class="swipe" style="width: 100%;">
+	        	<div class="swipe-wrap" id="picList"></div>
+	        </div>
+        </div>
+    </div>
+</body>
+<script src="../../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../../script/page/product/product_pics', function(init) {
+		init.initPage();
+	});
+</script>
+</html>
+

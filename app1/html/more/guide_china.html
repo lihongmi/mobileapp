@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>引导页</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css" />
+<link rel="stylesheet" type="text/css" href="../../style/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../style/swipe.css">
+<style>
+.swipe-wrap .guid_back {
+	position: absolute;
+	width: 8.3em;
+	height: 3.5em;
+	right: 1em;
+	bottom: 0.3em;
+	border-radius: 1em;
+	z-index: 99;
+}
+
+.swipe-wrap img {
+	display: block;
+	width: 32em;
+	height: 100%;
+}
+</style>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body>
+	<div class="swipe" id="productPics">
+		<div class="swipe-wrap">
+			<div>
+				<img src="../../images/1home-qd-2.jpg" />
+			</div>
+			<div>
+				<img src="../../images/2basic-qd-2.jpg" />
+			</div>
+			<div>
+				<img src="../../images/3payment-qd-2.jpg" />
+			</div>
+			<div>
+				<img src="../../images/4my mall-qd-2.jpg" /><span
+					class="db guid_back" id="back"></span>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	seajs.use('../../script/page/more/guide', function(init) {
+		init.initPage();
+	});
+</script>
+</html>

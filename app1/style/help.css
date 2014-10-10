@@ -1,0 +1,64 @@
+/* CSS Document */
+.help_cont{
+		   position:absolute;
+		   top:4.3em;
+		   bottom:0;
+		   background-color:#dedede;
+		   width:100%;
+		   height:auto;
+		   overflow:auto;
+	}
+
+.help_ul_1 li{
+			padding:0 1.6em;	
+	}
+
+.help_li_bt{
+			border-top:1px solid #fff;
+	}
+
+.help_li_bb{
+			border-bottom:1px solid #c7c7c7;
+	}
+
+.help_ul_1 li h1{
+		   		 font-size:1.5em;
+				 word-break:normal;
+				 min-height:4em;
+				 line-height:4em;
+				 overflow:hidden;
+	}
+
+.help_ul_1 li h2{
+		   		 font-size:1.5em;
+				 word-break:normal;
+				 min-height:2em;
+				 line-height:2em;
+				 padding-top:1em;
+				 overflow:hidden;
+	}
+
+.help_ul_1 li span{
+				line-height:2em;
+				padding-left:1.2em;
+				display:block;
+				position:relative;
+	}
+
+.help_ul_1 li span.main{
+						width:1.2em;
+						display:block;
+						height:100%;	
+	}
+
+.help_ul_1 li span.point img{
+							width:1.2em;
+							position:absolute;
+							left:0;
+							top:0.4em;
+	}
+
+.help_ul_2{
+		   padding-left:0.8em;			
+	}
+.help_ul_1 li h1 span{ padding-left:0em;}

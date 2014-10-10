@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 关于页面样式 by chenp 2014/2/18 后补充页面*/
+.about_Cont{ text-align:center; font-family:"黑体";}
+.about_Cont p{ margin-top:2.4em;}
+.about_Cont p img{ width:6.3em;}
+.about_Cont h2{ font-size:1.57em; color:#ff7800; padding:1em 0;}
+.about_Cont h3{ font-size:1.2em; color:#454545; }
+.about_Cont h4{ font-size:1.2em; color:#8e8e8e; margin:10em 0 1.5em;}
+.about_Cont h4 span{ font-family:Arial;}

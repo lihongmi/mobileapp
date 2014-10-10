@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>Order Details_Completed</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/orderDetails.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body>
+	<div class="wrap" id="contentWrapper">
+    	<div class="header">
+        	<span class="feed_back" id="back"></span>
+        	<span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_order_details">Order Details</span>
+        	<span class="feed_btn s_btn2 inter_lang_font" langkey="lang_cancel_order" id="submit" >Cancel order</span>
+        </div>
+        <div class="Order_Details_cont" id="orderDetails">
+    	</div>
+    </div>
+</body>
+    <script>
+		seajs.use('../../script/page/mymall/order_details', function(init) {
+            init.initPage();
+        });
+        function openPro(proId){
+        	window.localStorage.setItem('proId',proId);
+        	appFrame.open('product_detail','html/product/product_detail.html');
+        };
+	</script>
+</html>

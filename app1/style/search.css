@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 搜索页面样式 by chenp 2014/2/11 */
+.search_int{ width:auto; margin:1em 0.8em;}
+.search_text{ width:80%; height:auto; font-size:1.3em; padding:0.5em; border:1px solid #cacaca; box-shadow:1px 2px 2px #d8d8d8 inset; border-radius:5px; margin-right:0.5em;}
+.search_but{width:3.8em; margin-top:0.2em;background-image: linear-gradient( #f1f1f1 , #dadada ); border:1px solid #9d9d9d; border-radius:0.3em; height:2.8em; background:url(../images/serach_but.png) no-repeat 0.8em center; background-size:2.2em 2.2em;}
+.search_list li{ height:auto; padding:1em 2em; border-bottom:1px solid #c7c7c7; box-shadow:0px 1px 1px #fff; font-size:1.3em;text-overflow: ellipsis;overflow: hidden;}
+.search_empty{ width:90%; padding:0.5em 0; font-size:1.6em; margin:1em auto; border-radius:6px;}
+/*搜索关键字为空样式 by chenpp 2014/2/11*/
+.search_list h2{ padding:2em 0 1em; text-align:center; color:#8A8A8A; text-shadow:1px 1px 1px #fff; font-size:1.6em;}
+.search_list p.txt_1{ margin-bottom:2em;}
+.search_list p.txt_1 img{ width:5.8em;}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>产品详情</title>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../style/common.css" />
+<link rel="stylesheet" type="text/css" href="../../style/frame.css" />
+<link rel="stylesheet" type="text/css" href="../../style/product.css" />
+
+</head>
+
+<body>
+	<div class="content_wrapper" id="contentWrapper" style="background-color:#FFFFFF;">
+		<div class="header">
+			<a class="feed_back"></a> <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_pro_details">Product Details</span>
+			<a class="qCartBtn s_btn7" id="cart"><span class="inter_lang_font" langkey="lang_nav_cart">Cart</span></a>
+		</div>
+		<div style="position: absolute;top: 4.3em;bottom: 0;width: 100%;" id="detail_info_wrap">
+			<div class="product_way posi_r">
+				<ul id="detaileMenu">
+					<li class="first list_on"><span class="inter_lang_font" langkey="lang_basic_infor">Basic Information</span></li>
+					<li><span class="inter_lang_font" langkey="lang_pro_details">Product Details</span></li>
+					<li class="last"><span class="inter_lang_font" langkey="lang_rating_details">Rating Details</span></li>
+				</ul>
+			</div>
+			<div class="detail_wrapper" id="detailWrapper">
+				<div class="posi_r">
+					<img src="../../images/pro_loading.gif" id="proImg"
+						onerror="javascript:this.src='../../images/home_noPic_06.png'">
+					<div class="posi_a qProBox_1">
+						<h1 class="qTit_1 word_all">
+							<span class="fon_c6 fon_s11" id="proName"></span>
+						</h1>
+						<div class="posi_a qProBox_2" id="favoriteBtn">
+							<img src="../../images/pro_icon_gray.png" id="proFavorite">
+							<span class="fon_c6 fon_s11 db qPromt_5" id="proFavoriteNum"></span>
+						</div>
+					</div>
+				</div>
+				<div class="qProBox_3 qProLine_1 clearfix bg_c3">
+					<span class="fon_s13 fl qPromt_5"><span class="inter_lang_font" langkey="lang_product_price">Price</span>:</span> <span
+						class="fl qProml_5"><span class="fon_s5 fon_c21 db fl"
+						>$<span id="proStorePrice"></span></span> <del class="fon_c19 fon_s13 fl ml10"style="margin-top:0.2em;"
+							id="proGoodsPrice"></del></span>
+				</div>
+				<div class="qProBox_3 qProLine_1 clearfix bg_c3">
+					<div class="fl qProBox_4">
+						<span class="fon_s11 db"><span class="inter_lang_font" langkey="lang_weights_pad">Weight</span>: <span
+							id="proWeight"></span> kg</span> <span class="fon_s11 db"><span class="inter_lang_font" langkey="lang_msg_sold">SOLD</span>:
+							<span id="proSaleNum"></span> <span class="inter_lang_font" langkey="lang_intro28">amount</span></span> <span class="fon_s11 db"><span class="inter_lang_font" langkey="lang_area">Shop
+								area</span>: <span id="proArea"></span></span>
+					</div>
+					<div class="fl qProBox_4">
+						<span class="fon_s11 db"> <span class="inter_lang_font" langkey="lang_intro27">Logistics</span>: <span
+							id="proTrans"></span>
+						</span> <span class="fon_s11 db"> <span class="inter_lang_font" langkey="lang_attention_pad">Attentions</span>: <span
+							id="proAtten"></span></span>
+					</div>
+	
+				</div>
+				<div class="qProBox_3 clearfix bg_c3 qProLine_1" id="evalStor">
+					<p>
+						<span class="fon_s11 qPromr_5 inter_lang_font" langkey="lang_ratings_pad">Product Rating</span> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <span
+							class="fon_s11 qProml_5" id="evalStorNum">0</span>
+					</p>
+				</div>
+				<div class="qProBox_3 clearfix bg_c3" id="evalDes">
+					<p>
+						<span class="fon_s11 qPromr_5 inter_lang_font" langkey="lang_feature_rating_pad">Product Rating</span> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <span
+							class="fon_s11 qProml_5" id="evalDesNum">0</span>
+					</p>
+				</div>
+				<div class="qProBox_3 clearfix bg_c3" id="evalSer">
+					<p>
+						<span class="fon_s11 qPromr_5 inter_lang_font" langkey="lang_service_attitude_pad">Product Rating</span> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <span
+							class="fon_s11 qProml_5" id="evalSerNum">0</span>
+					</p>
+				</div>
+				<div class="qProBox_3 qProLine_1 clearfix bg_c3" id="evalShip">
+					<p>
+						<span class="fon_s11 qPromr_5 inter_lang_font" langkey="lang_shipping_speed_pad">Product Rating</span> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <img
+							class="qImg_1" src="../../images/pro_star_3.png"> <span
+							class="fon_s11 qProml_5" id="evalShipNum">0</span>
+					</p>
+				</div>
+			</div>
+			<div class="detail_wrapper dn" id="proDetailInfo"></div>
+			<div class="detail_wrapper dn bg_c2" id="evalInfoWrapper">
+				<div class="qBboderNo" id="evalInfoList">
+			    </div>
+			</div>
+			<div class="qProBox_5 txt_1 bg_c1 btm_ab">
+				<a class="dib s_btn2 qSbtn_1" id="buyNow"> <span class="fon_s6">
+						<img class="qImg_1" src="../../images/btn_o.png"> <span class="inter_lang_font" langkey="lang_buy_now">Buy Now</span>
+				</span></a> <a class="dib s_btn7 qSbtn_1 qProml_5" id="addCartBtn" href="javascript:void(0)"> <span
+					class="fon_s6"> <img class="qImg_1"
+						src="../../images/btn_r.png"> <span class="inter_lang_font" langkey="lang_add_cart">Add to Cart</span>
+				</span></a>
+			</div>
+		</div>
+	</div>
+	<div id="confirmPurchase" class="popup_wrapper dn z8 bg_c2">
+	    <div class="header">
+	        <span class="feed_back"></span>
+	        <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_confirm_inf">Confirm purchase</span>
+	    </div>
+	    <div class="Cont Cont2">
+	    	<div class="Cont qOrderDetailsBox_line3" style="bottom: 7.2em;top: 0;">
+			    <div class="qOrderDetailsBox_line3 mt1">
+		            <dl class="posi_r qOrderDetailsBox_box qOrderDetailsBox_line">
+		                <dt class="shadow_2 posi_a qOrderDetailsBox_img" style="height:7.1em;"><img id="proImg2" style="height:7.1em;" src="../../upload/orderDetails_pic.jpg"></dt>
+		                <dd class="qOrderDetailsBox_de qLine_2">
+		                    <h2 class="fon_s11 fon_c17 word_all" id="proName2"></h2>
+		                    <p class="txt_3 mt2"><del class="fon_c15 fon_s10" id="proGoodsPrice2">$0</del> <span class="fon_c21 fon_s7">$<span id="proStorePrice2">0</span></span></p>
+		                </dd>
+		            </dl>
+			    </div>
+			    <div id="proProperties"></div>
+			    <div class="qOrderDetailsBox_line4 qBox_5">
+			        <p class="fon_c23 fon_s10"><span class="inter_lang_font" langkey="lang_quantity">Quantity</span></p>
+			        <span class="dib" id="buyNumBtn">
+				        <span class="dib mt1 qBtn_7"><img src="../../images/cart_minus.png"></span>
+				        <span class="dib mt1 ml1"> <span class="bg_c1 qConBox_6 rad_1 mt1 shadow_4 db txt_1" style="width: 7em;"><b class="fon_s10 qInt_1 fon_c23" id="buyNum">0</b></span></span>
+				        <span class="dib mt1 qBtn_7 ml1"><img src="../../images/cart_plus.png"></span>
+			        </span>
+			        <span class="dib mt1 fon_s10 fon_c17 ml1"><span class="inter_lang_font" langkey="lang_in_stock">Inventory</span>: <span id="proCount">0</span> <span class="inter_lang_font" langkey="lang_items_count"></span></span>
+			        <p class=" txt_3"><span class="fon_s10 fon_c17"><span class="inter_lang_font" langkey="lang_total_amount">Total</span>:</span> <span class="fon_s6 fon_c21">$<span id="totalPrice">0</span></span></p>
+			    </div>
+		    </div>
+		    <div class="qOrderDetailsBox_line4 qBox_5 btm_ab2">
+		        <a class=" txt_1 db s_btn2 qBtn_3 mt1 p060" href="javascript:void(0)" id="confirmPurchaseBtn"></a>
+		    </div>
+	    </div>
+	</div>
+</body>
+
+<script src="../../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../../script/page/product/product_detail', function(init) {
+		init.initPage();
+	});
+	function changeNum(n){
+		var maxVal = parseInt(document.getElementById("proCount").innerHTML);
+		var iput = document.getElementById("proNumInput");
+		var val = iput.value;
+		if(parseInt(val) == 1 && n == -1){
+			return;
+		}else if(parseInt(val) == 0 && n == 1 && maxVal != 0){
+			document.getElementById("minusBtn").src = "../../images/cart_minus.png";
+		}else if(parseInt(val) == maxVal - 1 && n == 1){
+			document.getElementById("plusBtn").src = "../../images/cart_plus_gray.png";
+		}else if(parseInt(val) == maxVal && n == 1){
+			return;
+		}else if(parseInt(val) == maxVal && n == -1){
+			document.getElementById("plusBtn").src = "../../images/cart_plus.png";
+		}else if(parseInt(val) == 0 && n == -1 || parseInt(val) == maxVal && n == 1){
+			return;
+		}
+		iput.value = parseInt(val) + n;
+	}
+	function checkNum(){
+		var maxVal = parseInt(document.getElementById("proCount").innerHTML);
+		var iput = document.getElementById("proNumInput");
+		if(iput.value >= maxVal){
+			document.getElementById("plusBtn").src = "../../images/cart_plus_gray.png";
+			document.getElementById("minusBtn").src = "../../images/cart_minus.png";
+			iput.value = maxVal;
+		}else if(maxVal > 0 && iput.value <= 0){
+			iput.value = 1;
+		}
+	}
+	function checkInput(){
+		var keynum = window.event.which;
+		keychar = String.fromCharCode(keynum);
+		numcheck = /\d/;
+		return numcheck.test(keychar);
+	}
+</script>
+</html>

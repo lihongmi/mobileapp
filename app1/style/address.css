@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*编辑收货地址页面 by chenpp 2014/2/10 */
+.add_address{ width:4.8em; height:2.7em;line-height:2.7em;position: absolute;right: 0.5em;top: 0.8em; font-size:1em;}
+.addr_cont{width:96%; height:auto; margin:0.6em auto 0; background:#fff; border:1px solid #d7d7d7; border-bottom:none; box-shadow:1px 2px 2px #c7c7c7;}
+.addr_cont li{ padding:1.3em 0 1.3em 1.5em; border-bottom:1px solid #dedede; position:relative;}
+.addr_tit{ color:#3f3f3f; font-size:1.4em;}
+.addr_input{ border:none; height:auto; font-size:1.3em; color:#a4a4a4;}
+.addr_area{ border:none; width:15em; height:6.3em; font-size:1.3em; color:#a4a4a4; line-height:1.6em; font-family:Arial, Helvetica, sans-serif; margin-left:5.25em;}
+.addr_tit2{ top:1.2em; left:1em;}
+/*所有收货地址页面 by chenpp 2014/2/11*/
+.deli_addr_cont{ height:100%; margin:0.6em 0.8em 0;}
+#shipAddress{margin:0.6em 0.8em 0;}
+.deli_addr_cont li{ border:1px solid #cecece; background:#fff; margin-bottom:0.5em;}
+.deli_addr_cont li:hover,.deli_addr_cont li.cur{ border:1px solid #53b849;}
+.addr_list_word{ padding:0.8em; color:#3f3f3f; font-size:1.3em; line-height:1.5em;}
+.addr_list_edit{ height:2.2em; padding:0.4em 2.2em 0.4em 0; line-height:2.2em; background:#f8f8f8; border-top:1px solid #ccc; text-align:right; }
+.addr_list_edit img{ width:2.2em; float:right;}
+.addr_list_edit a{ color:#a4a4a4; font-size:1.3em; height:2.2em; display:inline-block; float:right; margin-left:0.5em;}
+/*地址地区选择样式 by chenpp 2014/2/11*/
+.addr_cont .sel_cont{ position:relative; display:inline-block;}
+.addr_cont span.sel_name{ color:#c1c1c1; padding:0 4.7em 0 1.4em; font-size:1.4em;}
+.addr_sel_cont{ width:8em; height:auto; border:1px solid #d9d9d9; border-bottom:none; position:absolute; left:1.4em;top:2em; z-index:999; background:#fff;}
+.addr_sel_cont li{ height:auto; border-bottom:1px solid #d9d9d9;padding:0.4em 1em; color:#bababa; cursor:pointer;}
+.addr_sel_cont li.cur,.addr_sel_cont li:hover{ color:#000;} 
+/*地址区域选择 by chenpp 2014/2/11*/
+.addr_area_cont{ width:auto; margin:0.5em 0.7em;}
+.addr_area_cont h2{ font-size:1.4em; color:#3f3f3f; padding-left:0.3em;}
+.addr_area_list{ width:100%; margin-top:0.5em; background:#fff; border:1px solid #d7d7d7; box-shadow:1px 2px 2px #c7c7c7; border-bottom:none; float:left; overflow:hidden;}
+.addr_area_list ul.Province_ul{ width:100%; float:left; position:relative;}
+.addr_area_list ul.Province_ul li{ height:auto; padding:0.7em 0; border-bottom:1px solid #dedede; height:1.8em; line-height:1.8em;}
+.addr_area_list ul.Province_ul li a{color:#8c8c8c; font-size:1.3em; padding-left:1.5em; width:40%; display:inline-block;}
+.addr_area_list ul li a:hover,.addr_area_list ul li a.cur{ color:#000;}
+.addr_area_list ul.City_ul{ width:50%; position:absolute; top:0; right:0;}

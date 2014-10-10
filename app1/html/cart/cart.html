@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>cart</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/cart.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css">
+<link rel="stylesheet" type="text/css" href="../../style/scroll.css">
+</head>
+
+<body>
+	<input type="hidden" id="boxIdxVal">
+        	<ul id="editMenu" class="dn">
+        		<li edit-type="0"><span class="inter_lang_font" langkey="lang_intro34"></span></li>
+        		<li edit-type="2"><span class="inter_lang_font" langkey="lang_delete"></span></li>
+        	</ul>
+	<div class="wrap" id="contentWrapper" style="z-index: 1;">
+        <div class="header" style="z-index:12;position:relative;">
+        	<span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_nav_cart">Cart</span>
+        	<span class="feed_btn all_check_box db" style="z-index: 121;" id="checkAllBtn" check-status="0"></span>
+        </div>
+        <div class="cart_cont" id="cartListWrapper" style="z-index:10;">
+	        <div id="cartList">
+	        </div>
+        </div>
+        <div class="settlement">
+        	<span class="fon_s7" style="margin-left:1.7em;"><span class="inter_lang_font" langkey="lang_total_amount">Total</span>:</span>
+            <span class="fa_cont_d2 fon_s7">$<span id="totalPay">0</span></span>
+            <span class="Settlement_btn Settlement_btn_no" id="setBtn"><a class="fon_s7"><span class="inter_lang_font" langkey="lang_check_out">Settlement</span></a><a class="fon_s7" id="totalCount">(0)</a></span>
+        </div>
+		<div class="footer posi_3">
+			<ul id="footerMenu">
+				<li id="home">
+					<p>
+						<img src="../../images/home.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_home">Home</span></p>
+				</li>
+				<li id="category">
+					<p>
+						<img src="../../images/category.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_category">Category</span></p>
+				</li>
+				<li id="cart" class="more_on">
+					<p>
+						<img src="../../images/cart.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_cart">Cart</span></p>
+				</li>
+				<li id="myMall">
+					<p>
+						<img src="../../images/my_mall.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_mymall">My Mall</span></p>
+				</li>
+				<li id="more">
+					<p>
+						<img src="../../images/more.png" />
+					</p>
+					<p><span class="inter_lang_font" langkey="lang_nav_more">More</span></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+<script src="../../script/common/sea.js"></script>
+<script type="text/javascript">
+	seajs.use('../../script/page/cart/cart', function(init) {
+		init.initPage();
+	});
+	function changeNum(n){
+		var iput = document.getElementById("proNumInput");
+		var val = iput.value;
+		if(parseInt(val) == 1 && n == -1){
+			return;
+		}
+		iput.value = parseInt(val) + n;
+	}
+	function checkInput(){
+		var keynum = window.event.which;
+		keychar = String.fromCharCode(keynum);
+		numcheck = /\d/;
+		return numcheck.test(keychar);
+	}
+		
+	//继续逛逛
+	function CartGoBuy(){
+		appFrame.open('home','html/home.html');
+	}
+	function showDetail(id){
+		window.localStorage.setItem("proId", id);
+		appFrame.open("productDetail", "html/product/product_detail.html");
+	}
+</script>
+</html>

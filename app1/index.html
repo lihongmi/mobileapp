@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>CooMall app index page</title>
+<link rel="stylesheet" type="text/css" href="style/common.css"/>
+<link rel="stylesheet" type="text/css" href="style/main.css"/>
+	<script type="text/javascript" src="rte/cordova.js"></script>
+	<script type="text/javascript" src="rte/rte.js"></script>
+    <script src="script/common/sea.js"></script>
+    <script>
+		seajs.use('./script/page/init', function(init) {
+            init.initPage();
+        });
+		function OpenFrame(){
+			appFrame.open("home", "html/home.html");
+		}
+		function OpenConfirm(){
+			var options = {
+				id: "abc",
+				header: {
+					text: "Test Confirm Header"
+				},
+				selectList: [{
+					text: "Select list one",
+					value: "value1"
+				},{
+					text: "Select list two",
+					value: "value2"
+				},{
+					text: "Select list three",
+					value: "value3"
+				}],
+				selectFunction: function(val, txt, index){
+					alert("Value : " + val + ", Text : " + txt + ", Index : " + index);
+				}
+				/*confirm: {
+					text: "Are you sure to logout current user?",
+					buttonOK: {
+						text: "Confirm"
+					},
+					buttonNO: {
+						text: "Cancel"
+					},
+					confirmFunction: function(){alert(1);},
+					cancelFunction: function(){alert(2);}
+				}*/
+			};
+			appFrame.showConfirm(options);
+		}
+		function OpenTooltip(){
+			appFrame.showTooltip("Test Tooltip!Test Tooltip!Test Tooltip!Test Tooltip!Test Tooltip!Test Tooltip!Test Tooltip!");
+			setTimeout(function(){
+				appFrame.closeTooltip();
+			}, 3000);
+		}
+		function OpenShadow(){
+			appFrame.open('waitPay','html/mymall/waiting_payment_orders.html');
+		}
+	</script>
+</head>
+<body>
+	<div id="contentWrapper">
+		<img alt="" src="./loading.jpg" style="width: 100%;">
+	</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* CSS Document */
+
+/* module:Order Details by qsl */
+.qOrderDetailsBox{ background:#f8f8f8; margin:.45em; padding-bottom:4.6em;}
+.qOrderDetailsBox_no{ padding-bottom:0;}
+.qOrderDetailsBox_tit{ height:3.75em; line-height:3.75em; text-indent:1.2em;}
+.qOrderDetailsBox_tit2{ height:3.1em; line-height:3.1em; text-indent:1.2em;}
+.qOrderDetailsBox_tit3{ left:1.25em; top:0; width:10.35em; padding-top:1.36em;}
+.qOrderDetailsBox_tit4{ left:1.25em; top:0; width:7.35em;}
+.qOrderDetailsBox_tit5{text-indent:1.2em;}
+
+.qOrderDetailsBox_line{border-bottom:1px solid #dedede;}
+.qOrderDetailsBox_line2{border-bottom:2px solid #bdbdbd;}
+.qOrderDetailsBox_line3{ border-bottom:#c7c7c7 solid 1px;}
+.qOrderDetailsBox_line4{ border-top:1px solid #f8f8f8;}
+.qOrderDetailsBox_box{ min-height:7.8em; padding-bottom:.6em;}
+.qOrderDetailsBox_box2{ padding:1.35em 0;}
+
+.qOrderDetailsBox_img{ left:1.25em; top:0; width:7.35em;}
+.qOrderDetailsBox_de{ margin:0 2.5em 0 10em; line-height:1.8em;}
+.qOrderDetailsBox_icon{ width:1.8em; right:.5em; top:4.1em;}
+.qOrderDetailsBox_de2{ margin:0 1.2em 0 11.8em; line-height:1.8em;}
+.qOrderDetailsBox_de3{ margin:0 1.2em 0 8.6em; line-height:1.8em;}
+
+.qOrderDetailsFoot{ left:0; bottom:0; background:#f5f5f5; height:4.3em; line-height:4.3em; text-indent:1.6em; width:100%; border-top:2px solid #e4e4e4;}
+.qOrderDetailsFoot_btn{ height:4.6em; line-height:4.6em; right:0; bottom:0; background:#d30000; text-indent:0; padding:0 .5em; min-width:7em; text-align:center;}
+.qLine_1{ line-height:1.2em; text-indent:0; padding-top:1em;}
+.qLine_2{ line-height:1.6em;}
+.qBtn_1{ height:4em; line-height:4em; width:13.8em;}
+.qBtn_2{ height:3.5em; line-height:3.5em; width:13.8em;}
+.qBtn_3{ height:4em; line-height:4em;}
+.qBtn_4{ height:3.3em; line-height:3.3em; padding:0 1em;}
+.qBtn_5{ height:3.3em; line-height:3.3em; width:6.6em;}
+.qBtn_6{ background:#ccc;}
+.qBtn_7{ width:2.7em;}
+.qBox_5 a{ margin-left:2em;}
+.qBox_5 a:last-first{ margin-left:0;}
+.qBox_1{ padding:2.5em 0 1.2em;}
+.qBox_2{ padding:0 .65em .5em;}
+.qBox_22{ margin:0 .65em .5em;}
+.qBox_3{ padding:.55em .4em; padding-bottom:4.3em;}
+.qBox_4{ padding:1em 1.7em;}
+.qBox_5{ padding:1em 1.85em; line-height:1.6em;}
+.qBox_6{ margin:.4em 1em 0;}
+.qBox_7{ padding:1em 1.5em; line-height:2em;}
+.qBox_8{ right:.85em; bottom:.85em;}
+.qTit_1{ line-height:1.4em; padding:.6em 0;}
+.qTit_2{ line-height:2.75em; text-indent:1.5em; background:#f5f5f5;}
+.qTit_3{ line-height:2.75em; text-indent:1.5em;}
+.qTit_4{ top:0; right:2em;}
+.qTit_5{ right:0;top:0;}
+.qCon_1{ padding:0 2.5em 0 1.5em; line-height:1.6em; padding-bottom:.5em;}
+.qConBox_1{ padding:1.2em 1em;}
+.qConBox_2{ border:#9c9c9c solid 1px; background:#f2f2f2; text-indent:.65em; height:2.7em; line-height:2.7em; width:19.3em; top:0; right:0;}
+.qConBox_3{height:2.7em; line-height:2.7em;}
+.qConBox_4{ border:#9c9c9c solid 3px; right:0; bottom:3em;width:19.1em; text-indent:1.1em; line-height:3.3em;}
+.qConBox_4 li:last-child{ border-bottom:none;}
+.qConBox_5{ height:3.9em; line-height:3.9em; padding:0 .8em; border:#cacaca solid 1px;}
+.qConBox_6{ height:3.9em; line-height:3.9em; width:7.9em;border:#cacaca solid 1px;}
+.qConBox_7{ height:4.4em; line-height:4.4em; padding:0 1.1em;}
+.qConBox_8{ right:1.1em; height:2em; top:1.1em;line-height:2em;}
+.qConBox_9{ padding:.1em .65em; height:5em;}
+.qConBox_11{ margin-top:.75em;}
+.qConBox_12{ line-height:5em; border-left:#ccc solid 1px; margin-left:.8em; padding-left:.6em;}
+.qConBox_13{ right:2.4em; height:2em; top:1.6em;line-height:2em;}
+
+.qStar{ width:2em; height:2em; background:url(../images/star.png) 0 0 no-repeat; background-size:100%;}
+.qStarOn{background:url(../images/star_on.png) 0 0 no-repeat; background-size:100%;}
+.qStar_2{ width:1.5em; height:1.5em; background:url(../images/star.png) 0 0 no-repeat; background-size:100%;}
+.qStarOn_2{background:url(../images/star_on.png) 0 0 no-repeat; background-size:100%;}
+
+.qStarBox{ width:13em;}
+.qStarBox_2{ width:5em;}
+
+.qIcon_1{ right:1.1em; top:49%; width:1.15em;}
+.qIcon_2{ width:.9em; top:0; right:.9em; text-indent:0;}
+.qIcon_3{ width:.95em; bottom:-1.88em; left:50%; text-indent:0;}
+.qIcon_4{ width:.75em;}
+.qIcon_5{ width:2em;}
+
+.qScore_1{ width:6.55em; height:1.9em;background:url(../images/ev-one-no.png) 0 0 no-repeat; background-size:100%; margin-left:.7em; margin-bottom:.4em;}
+.qScore_2{ width:9.65em; height:1.9em;background:url(../images/ev-two-no.png) 0 0 no-repeat; background-size:100%;margin-bottom:.4em;}
+.qScore_3{ width:6.15em; height:1.9em;background:url(../images/ev-three-no.png) 0 0 no-repeat; background-size:100%;margin-bottom:.4em;}
+
+.qConBoxOn .qScore_1{ background:url(../images/ev-one-on.png) 0 0 no-repeat; background-size:100%;}
+.qConBoxOn .qScore_2{ background:url(../images/ev-two-on.png) 0 0 no-repeat; background-size:100%;}
+.qConBoxOn .qScore_3{ background:url(../images/ev-three-on.png) 0 0 no-repeat; background-size:100%;}
+.qConBoxOn .qtit_1{ color:#ff0202;}
+.qConBoxOn .qtit_2{ color:#ff9e01;}
+.qConBoxOn .qtit_3{ color:#282828;}
+
+.qInt_1{ width:100%; border:none;}
+.qAre_1{ width:96%; background:none; min-height:4em; padding:.85em 2%; border:#e0e0e0 solid 1px;}
+.qMt_1{ margin-top:6.7em;}
+.qMt_2{ margin-top:4.6em;}
+.qMr1_5{ margin-right:1.5em;}
+.qMt_n{ margin-top:0;}
+.qPt_1{ padding-bottom:.5em;}
+.qPl_1{ padding-left:1em;}
+
+
+.qCheckBox{ right:1.1em;top:1.45em; width:1.35em; height:1.4em; background:url(../images/checkbox_item.png) 0 0 no-repeat; background-size:100%;}
+.qCheckBoxOn{background:url(../images/checkbox_item_on.png) 0 0 no-repeat; background-size:100%;}
+.qImg_1{ width:4em; height:4em; margin-top:.55em;}
+.qImg_2{ width:2em;}
+.qImg_3{ width:1.15em;}
+.qImg_4{ width:1.5em;}
+
+.qBboderNo .qBox_7:last-child{ border-bottom:none;}
+/*Order Details_Completed*/
+.Order_Details_cont{position:absolute;top:4.3em;bottom:0em;overflow:auto;width:100%;}
+.Order_cont_top{height:12.3em;width:auto;margin:0.5em 0.5em 0 0.5em;background:#fff;border-bottom:1px solid #dedede;}
+.Order_cont_top h1{height:3.7em;line-height:3.7em;border-bottom:1px solid #dedede;}
+.Order_cont_top h1 span{font-size:1.3em;padding-left:0.8em;}
+.Logistics_Information h2{ padding-top:0.7em;line-height:2.4em; height:2.4em;padding-left:1.1em;}
+.Logistics_Information p{padding:0 1.1em;width:auto;color:#bdbdbd;line-height:1.5em;}
+.Order_cont_bottom{ height:25.5em;overflow:auto;margin:0 0.5em;background:#fff;}
+.Order_cont_bottom h1{ padding-top:1.4em;padding-left:1.1em;}
+.Order_cont_bottom dl{margin:0.6em;background-color:#fff;min-height:8.6em;overflow:hidden;}
+.Order_cont_bottom dl dt{width:7.3em; height:7.3em;box-shadow:0px 1px 5px rgba(199,199,199,0.75); margin-top:0.5em;margin-left:0.6em;float:left;}
+.Order_cont_bottom dl dt img{width:7.3em;height:7.3em;}
+.Order_cont_bottom dl dd{margin-left:0.9em;line-height:1.6em;float:left;width:18em;}
+.fa_cont_d1{margin-top:0.6em; color:#3f3f3f;}
+.fa_cont_d2{color:#f00;}
+.fa_cont_d3{color:#c9c9c9;}		
+.fa_list_arrow{width:1.8em; right:2.3em;top:3.2em;}
+.subttal{margin-left:9.4em;padding-bottom:1.2em;border-bottom:1px solid #dedede;padding-left:9.5em;}
+.order_footer{height:3.2em;line-height:3.2em;background:#f5f5f5;position:absolute; bottom:0;width:100%;}
+.order_footer p{float:right;height:3.2em;line-height:3.2em;margin-right:1.4em;}
+

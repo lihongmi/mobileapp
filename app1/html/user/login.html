@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style"  />
+<meta content="telephone=no" name="format-detection" />
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/user.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+</head>
+
+<body> 
+<div id="contentWrapper">
+<div class="header posi_3">
+	<a class="feed_back" id="back"></a>
+    <span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_btn_log_in">Login</span>
+</div>
+<div class="Favorites_cont">
+	<div class="Login_cont">
+    	<ul>
+        	<li class="posi_1">
+            	<span class="Login_tit inter_lang_font" langkey="lang_lable_account">Account </span> :
+                <input type="text" class="Login_text "  name="userName" id="userName">
+            	<div class="history dn" id="userHistory"><a class="sj_down"></a></div>
+            </li>
+            <li>
+            	<span class="Login_tit inter_lang_font" langkey="lang_lable_password">Password </span> :
+                <input type="password" class="Login_text "  name="passWord" id="passWord" />
+            </li>
+        </ul>
+    </div>
+  	<p class="txt_1">
+        <input name="registration" type="button"  class="s_btn1 Login_button inter_lang_button" langkey="lang_btn_register" value="Registration" id="registration"/>
+        <input name="login_to" type="button" class="s_btn2 Login_button inter_lang_button" langkey="lang_btn_log_in" value="Login"  id="login_to"/>
+    </p> 
+    <p class="mt10 check_cont" id="auotLogin">
+    	<a class="check check_no" id="check"><img src="../../images/Registration_check.png"></a><span class="inter_lang_font" langkey="lang_intro15">remember password</span>
+    </p>
+</div>
+</div>
+</body>
+<script src="../../script/common/sea.js"></script>
+    <script>
+		seajs.use('../../script/page/user/login', function(init) {
+            init.initPage();
+        });
+	</script>
+</html>

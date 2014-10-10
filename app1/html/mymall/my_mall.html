@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>My Mall</title>
+<link rel="stylesheet" type="text/css" href="../../style/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/my_mall.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/frame.css"/>
+<script src="../../script/common/sea.js"></script>
+</head>
+
+<body>
+	<div class="wrap" id="contentWrapper">
+    	<div class="header">
+        	<span class="fon_s3 fon_c6 inter_lang_font" langkey="lang_nav_mymall">My mall</span>
+        </div>
+        <div class="my_mall_user">
+        	<dl class="over_hidd">
+            	<dt><img id="userPath" src=""/></dt>
+                <dd>
+                	<p class="fon_s5" id="userNAME">Quenmgaa98570411</p>
+                    <p class="fon_s7 mt20" id="myFavorites"><span class="inter_lang_font" langkey="lang_favourite">My Favorites</span></p>
+                </dd>
+            </dl>
+        </div>
+        <div class="my_mall_cont" id="menuList">
+        	<ul style="height:auto;">
+            	<li class="first" id="waitingPaymentOrders">
+                	<span class="menu_left"><img src="../../images/waitting_payment.png"/></span>
+                    <span class="menu_cen fon_s7 inter_lang_font" langkey="lang_unpaid_orders">Waiting Payment Orders</span>
+                    <span class="menu_right"><img src="../../images/Arrow.png"/></span>
+                </li>
+            	<li id="waitingShippingOrders">
+                	<span class="menu_left"><img src="../../images/waiting_shinping.png"/></span>
+                    <span class="menu_cen fon_s7 inter_lang_font" langkey="lang_unshipped_orders">Waiting Shipping Orders</span>
+                    <span class="menu_right"><img src="../../images/Arrow.png"/></span>
+                </li>
+            	<li id="waitingReveivingOrders">
+                	<span class="menu_left"><img src="../../images/waiting_receiving.png"/></span>
+                    <span class="menu_cen fon_s7 inter_lang_font" langkey="lang_unreceipted_orders">Waiting Receiving Orders</span>
+                    <span class="menu_right"><img src="../../images/Arrow.png"/></span>
+                </li>
+            	<li id="orderDetailsCompletedOrders">
+                	<span class="menu_left"><img src="../../images/completed.png"/></span>
+                    <span class="menu_cen fon_s7 inter_lang_font" langkey="lang_completed_orders">Completed Orders</span>
+                    <span class="menu_right"><img src="../../images/Arrow.png"/></span>
+                </li>
+            	<li class="last" id="deliveryAddress">
+                	<span class="menu_left"><img src="../../images/shipping_addresses.png"/></span>
+                    <span class="menu_cen fon_s7 inter_lang_font" langkey="lang_shipping_address">Shipping Addresses</span>
+                    <span class="menu_right"><img src="../../images/Arrow.png"/></span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+        	<ul>
+            	<li id="home_btn">
+                	<p><img src="../../images/home.png"/></p>
+                    <p><span class="inter_lang_font" langkey="lang_nav_home">Home</span></p>
+                </li>
+            	<li id="category">
+                	<p><img src="../../images/category.png"/></p>
+                    <p><span class="inter_lang_font" langkey="lang_nav_category">Category</span></p>
+                </li>
+            	<li id="cart">
+                	<p><img src="../../images/cart.png"/></p>
+                    <p><span class="inter_lang_font" langkey="lang_nav_cart">Cart</span></p>
+                </li>
+            	<li class="more_on">
+                	<p><img src="../../images/my_mall.png"/></p>
+                    <p><span class="inter_lang_font" langkey="lang_nav_mymall">My Mall</span></p>
+                </li>
+            	<li  id="more_btn">
+                	<p><img src="../../images/more.png"/></p>
+                    <p><span class="inter_lang_font" langkey="lang_nav_more">More</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+    <script>
+		seajs.use('../../script/page/mymall/my_mall', function(init) {
+            init.initPage();
+        });
+	</script>
+</html>
