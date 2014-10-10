@@ -13,6 +13,7 @@
 ```javascript
   var ihubo = {
     nickName  : "Rice",
-    site : "http://www.w2js.com"
+    site : "http://www.w2js.com",
+	email: "lixiaomi613@163.com"
   }
 ```
