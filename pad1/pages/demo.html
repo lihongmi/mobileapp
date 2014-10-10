@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>order_conver</title>
+  <!-- <link rel="stylesheet" href="../Css/flexslider.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="../Css/index.css"/>
+<!--<script>
+    if(localStorage.getItem(css)){
+        var link = document.createElement(link);
+        link.setAttribute(rel, stylesheet);
+        link.setAttribute(href, localStorage.getItem(css));
+        var heads = document.getElementsByTagName("head");
+        if(heads.length)
+            heads[0].appendChild(link);
+        else
+           document.documentElement.appendChild(link);
+    }
+</script>-->
+<style id="animateStyle">
+    @-webkit-keyframes detailAnimation{
+         from{-webkit-transform: translate(0,0)scale(1,1);}
+         /*50%{-webkit-transform: translate(300px,-150px)scale(0.5,0.5);}*/
+          to{-webkit-transform: translate(600px,-300px)scale(0,0);}
+    }
+</style>
+<style>
+    .Wlayer.animation{
+      -webkit-animation-name: detailAnimation;
+      -webkit-animation-duration: 0.3s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-fill-mode:forwards;
+    }
+    li{font-size: 2em;font-family: "微软雅黑";line-height: 1.7;}
+</style>
+
+</head>
+
+
+<body>
+  <!--<div class="flexslider">
+  <ul class="slides">
+   <li>
+       <div>
+     但是肯定撒覅加多少空间放多少看进度款金额等会儿我都拿到卡才能看到搜了搜诶看没事可发货快急死了法律和凤凰卡泪厄尅诶还可看看积分卡分离而人口默多克噢诶诶犒劳我玩魔兽尅额看的了饿哦尔康，买的卡斯尔康，马上开始了，面对面，111111111111</div>
+   </li>
+   <li>
+     <div>
+     但是肯定撒覅加多少空间放多少看进度款金额等会儿我都拿到卡才能看到搜了搜诶看没事可发货快急死了法律和凤凰卡泪厄尅诶还可看看积分卡分离而人口默多克噢诶诶犒劳我玩魔兽尅额看的了饿哦尔康，买的卡斯尔康，马上开始了，面对面，22222222222</div>
+   </li>
+   <li>
+     <div>
+     但是肯定撒覅加多少空间放多少看进度款金额等会儿我都拿到卡才能看到搜了搜诶看没事可发货快急死了法律和凤凰卡泪厄尅诶还可看看积分卡分离而人口默多克噢诶诶犒劳我玩魔兽尅额看的了饿哦尔康，买的卡斯尔康，马上开始了，面对面，33333333333333</div>
+   </li>
+   </ul>
+  </div>-->
+
+<div class="flexslider"> 
+    <ul class="slides"> 
+      <li> 
+        <div class="food_cont"> 
+              <div class="title">
+                    <strong><span>${data.name}</span></strong><b class="color1">&yen;${data.price}#L{元/${data.unit||"份"}}</b> (data.memberprice!==null)><b class="color1">#L{会员价}:&yen;${data.memberprice}#L{元/${data.unit||"份"}}</b> +
+                    (data.combo)><div class="fr"><a href="javascript:void(0);" evt-type="showDetail" evt-data="category=#category#&id=${data.comboId}&type=3&count=${data.count}&tastes=${data.tastes}&choose=${data.choose}" class="btn5">#L{返回情侣套餐}</a></div>
+              </div>
+              <div class="info big_img">
+                  <div class="img"><img src="${data.image}" alt=""></div>
+                  <div class="text">
+                    <b>${list.title}：</b>
+                    <p>${list.context}</p>
+                  </div>
+                  <div class="AD-block">${data.adHtml}</div>
+              </div>
+              <div class="subinfo">
+                  <dl class="list3 list_bottom">
+                    <dt>#L{数量}：</dt>
+                      <dd>
+                        <div class="numbers">
+                          <a href="javascript:void(0);" evt-type="delCount" evt-data="category=${data.category}&id=${data.id}">&minus;</a>
+                          <input type="number" value="1" disabled="disabled">
+                          <a href="javascript:void(0);" evt-type="addCount" evt-data="category=${data.category}&id=${data.id}">+</a>
+                        </div>
+                      </dd>
+                  </dl>
+                  <dl class="list3 list_top">
+                    <dt>#L{口味}：</dt>
+                      <dd js-node="taste">
+                        <a href="javascript:void(0);" evt-type="tasteTag" evt-data="category=${data.category}&id=${data.id}" class="btn10">${list}<i></i></a>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="btn_cont txr">
+                  <a href="javascript:void(0);" evt-type="saveItem" evt-data="category=${data.category}&id=${data.id} (data.combo)>&combo=1&comboId=${data.comboId}" class="btn4">{我确定要点这个菜}</a>
+              </div>
+        </div>
+      </li> 
+    </ul>   
+</div>  
+<!-- <script src="../js/EasyTemplate.min.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/lang/en-us.js"></script> -->
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.flexslider.js"></script>
+
+<!-- <script src="../js/layerTpl.js"></script>
+<script src="../js/pageTpl.js"></script>
+
+<script src="../js/layer.js"></script>
+<script src="../js/common.js"></script>
+
+<script src="../js/menuList.js"></script>
+<script src="../js/screenLight.js"></script> -->
+
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+
+</body>
+</html>

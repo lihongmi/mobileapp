@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" manifest="../cache.manifest">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<script>
+    window.onload = function(){
+        console.log("manifest load : onload page...");
+        try {
+            console.log("manifest load : load.........."+typeof applicationCache);
+            applicationCache.onchecking = function () {
+                //检查manifest文件是否存在
+                console.log("manifest load : cunzai");
+            }
+
+            applicationCache.ondownloading = function () {
+                //检查到有manifest或者manifest文件
+                //已更新就执行下载操作
+                //即使需要缓存的文件在请求时服务器已经返回过了
+                console.log("manifest load : downloading");
+            }
+
+            applicationCache.onnoupdate = function () {
+                //返回304表示没有更新，通知浏览器直接使用本地文件
+                console.log("manifest load : onnoupdate");
+            }
+
+            applicationCache.onprogress = function () {
+                //下载的时候周期性的触发，可以通过它
+                //获取已经下载的文件个数
+            }
+
+            applicationCache.oncached = function () {
+                //下载结束后触发，表示缓存成功
+                console.log("manifest load : cached");
+            }
+
+            applicationCache.onupdateready = function () {
+                //第二次载入，如果manifest被更新
+                //在下载结束时候触发
+                //不触发onchched
+                console.log("manifest load : 本地缓存正在更新中。。。");
+                if (confirm("是否重新载入已更新文件")) {
+                    applicationCache.swapCache();
+                    //location.reload();
+                }
+            }
+
+            applicationCache.onobsolete = function () {
+                //未找到文件，返回404或者401时候触发
+                console.log("manifest load : onobsolete");
+            }
+
+            applicationCache.onerror = function (evt) {
+                //其他和离线存储有关的错误
+                console.log("manifest load : onerror");
+                /*for (var k in evt) {
+
+                 console.log("manifest load : onerror1:"+k+":"+evt[k]);
+                 }*/
+            }
+        } catch (e) {
+            console.log("manifest load : err:"+ e.message);
+        }
+    };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" manifest="../cache.manifest">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cover</title>
+	<link rel="stylesheet" href="../Css/index.css">
+    <script>
+
+        if(localStorage.getItem('css')){
+            var link = document.createElement('link');
+            link.setAttribute('rel', 'stylesheet');
+            link.setAttribute('href', localStorage.getItem('css'));
+            var heads = document.getElementsByTagName("head");
+            if(heads.length)
+                heads[0].appendChild(link);
+            else
+                document.documentElement.appendChild(link);
+        }
+    </script>
+
+</head>
+<body class="Bcover">
+	<div class="bg">
+		<!--<div class="menu1">
+			<a href="menu_list.html" target="_self" class="btn20">浏览菜谱</a>
+			<a href="javascript:void(0);" evt-type="service" evt-data="type=yidian" target="_self" class="btn20">查看已点</a>
+			<a href="javascript:void(0);" evt-type="pay" target="_self" class="btn20">结账付款</a>
+			<a href="javascript:void(0);" id="service" evt-type="serviceCall" evt-data="open=1" class="btn20">呼叫/追加服务&nbsp;<i class="arrow">&gt;</i></a>
+			<div class="pop">
+			</div>
+		</div>
+		<div class="menu2">
+			<a href="javascript:void(0);" class="btn11">叫出租车</a>
+			<a href="javascript:void(0);" class="btn11">呼叫代驾</a>
+			<a href="javascript:void(0);" class="btn11">周边搜索</a>
+		</div>-->
+	</div>
+    <!-- AD -->
+    <div class="AD-block" id="indexAd"></div>
+    <div class="AD-index">
+        <!--
+        w 横向个数
+        h 纵向个数
+        -->
+        <div class="AD-wrap">
+            <!--type A-->
+            <!--
+            <div class="row">
+                <div class="cell">AD</div>
+            </div>
+             -->
+
+
+            <!--type B-->
+
+            <!--<div class="row">
+                <div class="cell">AD</div>
+                <div class="cell">AD</div>
+            </div>-->
+
+            <!--type C-->
+
+            <!-- <div class="row">
+                <div class="cell wider">AD</div>
+                <div class="cell">AD</div>
+            </div> -->
+            <!--type D-->
+            <!-- <div class="row">
+                <div class="cell">AD</div>
+                <div class="cell">AD</div>
+            </div>
+            <div class="row">
+                <div class="cell">AD</div>
+                <div class="cell">AD</div>
+            </div>
+             -->
+
+        </div>
+    </div>
+    <div class="AD-index-bottom"></div>
+	<!--<script src="../data/data.js"></script>-->
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script src="../js/EasyTemplate.min.js"></script>
+    <script src="../js/lang/en-us.js"></script>
+    <script src="../js/pageTpl.js"></script>
+    <script src="../js/layerTpl.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/screenLight.js"></script>
+	<script src="../js/indexAd.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" manifest="../cache.manifest">
+<head>
+	<meta charset="UTF-8">
+	<title>page</title>
+    <link rel="stylesheet" href="../Css/index.css"/>
+	<script>
+
+		if(localStorage.getItem('css')){
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('href', localStorage.getItem('css'));
+			var heads = document.getElementsByTagName("head");
+			if(heads.length)
+				heads[0].appendChild(link);
+			else
+				document.documentElement.appendChild(link);
+		}
+	</script>
+<!--
+	<script>
+		var link = document.createElement('link');
+		link.setAttribute('rel', 'stylesheet');
+		link.setAttribute('href', 'http://1.foodorder.sinaapp.com/Public/Css/index.css?ran='+Math.random());
+		var heads = document.getElementsByTagName("head");
+		if(heads.length)
+			heads[0].appendChild(link);
+		else
+			document.documentElement.appendChild(link);
+	</script>
+-->
+</head>
+<body class="BList">
+	<div class="leftNav">
+
+	</div>
+	<div class="mainList listConform">
+		<div class="title">已点菜品查询</div>
+		<table class="table1">
+			<thead><tr>
+				<th class="txl">菜品</th>
+				<th>单价</th>
+				<th>数量</th>
+				<th>口味</th>
+				<th>操作</th>
+			</tr>
+			</thead>
+			<!--<tr>
+				<td class="txl">1.毛氏红烧肉</td>
+				<td>42元/份</td>
+				<td>1</td>
+				<td><span class="btn10">口味</span><span class="btn10">口味</span><span class="btn10">口味</span></td>
+				<td><span class="btn7">已上菜</span></td>
+			</tr>-->
+            <tbody js-node="orderConfirmList">
+            </tbody>
+            <tfoot>
+            <tr js-node="totalContainer">
+				<td colspan="5" class="txl">
+					<em>总价：</em>
+					<span class="color1"><em js-node="total"></em>元</span>
+				</td>
+			</tr>
+			</tfoot>
+		</table>
+		<div class="txc" style="margin-top: 10px;">
+			<div class="pageBtn" js-node="pageBtn"><a href="javascript:void(0);" js-node="prev" evt-type="prev">上一页</a><a href="javascript:void(0);" js-node="next" evt-type="next">下一页</a></div>
+		</div>
+		<div class="btn_cont txc">
+			<a href="javascript:void(0);" target="_self" evt-type="addFood" class="btn4">加菜</a>
+			<span class="btn5 miniLayer">
+				<a href="javascript:void(0);" evt-type="callService">呼叫服务&or;</a>
+				<span class="mini" style="display: none;">
+					<a href="javascript:void(0);" evt-type="service" evt-data="type=4&msg=人工服务">人工服务</a>
+					<a href="javascript:void(0);" evt-type="service" evt-data="type=1&msg=添加茶水">添加茶水</a>
+					<a href="javascript:void(0);" evt-type="service" evt-data="type=3&msg=增加餐位">增加餐位</a>
+					<a href="javascript:void(0);" evt-type="pay" evt-data="type=0&msg=结账付款">结账付款</a>
+				</span>
+			</span>
+			<p class="info" js-node="info"></p>
+		</div>
+	</div>
+	<div id="confirmAd"></div>
+</body>
+<!--<script type="text/javascript" src="../data/data.js"></script>-->
+<script type="text/javascript" src="../js/lang/en-us.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/EasyTemplate.min.js"></script>
+<script type="text/javascript" src="../js/layerTpl.js"></script>
+<script type="text/javascript" src="../js/pageTpl.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/leftNav.js"></script>
+<script type="text/javascript" src="../js/orderConfirm.js"></script>
+<script src="../js/screenLight.js"></script>
+<script>
+    $.delegate('callService', 'tap', function(){
+        var mini = $(".mini");
+        mini[mini.css('display') == "none" ? 'show' : 'hide']();
+    });
+    /*$(document.body).tap(function(evt){
+	    if(evt.target == $('[evt-type="callService"]')[0]) return;
+	    var mini = $(".mini");
+	    if(mini.css('display') !== "none") mini.hide();
+    });
+*/
+
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" manifest="../cache.manifest">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>order_conver</title>
+    <link rel="stylesheet" href="../Css/index.css"/>
+	<script>
+		if(localStorage.getItem('css')){
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('href', localStorage.getItem('css'));
+			var heads = document.getElementsByTagName("head");
+			if(heads.length)
+				heads[0].appendChild(link);
+			else
+				document.documentElement.appendChild(link);
+		}
+	</script>
+<!--
+	<script>
+		var link = document.createElement('link');
+		link.setAttribute('rel', 'stylesheet');
+		link.setAttribute('href', 'http://1.foodorder.sinaapp.com/Public/Css/index.css?ran='+Math.random());
+		var heads = document.getElementsByTagName("head");
+		if(heads.length)
+			heads[0].appendChild(link);
+		else
+			document.documentElement.appendChild(link);
+	</script>
+-->
+	<style id="animateStyle">
+		@-webkit-keyframes detailAnimation{
+			from{-webkit-transform: translate(0,0)scale(1,1);}
+			/*50%{-webkit-transform: translate(300px,-150px)scale(0.5,0.5);}*/
+			to{-webkit-transform: translate(600px,-300px)scale(0,0);}
+		}
+	</style>
+	<style>
+		.Wlayer.animation{
+			-webkit-animation-name: detailAnimation;
+			-webkit-animation-duration: 0.3s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode:forwards;
+		}
+	</style>
+</head>
+<body class="Bmenu">
+	<div class="leftNav">
+
+	</div>
+	<div class="mainList">
+		<div class="coverList">
+
+		</div>
+	</div>
+    <!-- AD -->
+    <div class="AD-block" id="listAd"></div>
+</body>
+<script src="../js/lang/en-us.js"></script>
+<script src="../js/layerTpl.js"></script>
+
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/jquery.flexslider.js"></script>
+
+
+
+
+
+
+
+<script src="../js/EasyTemplate.min.js"></script>
+<script src="../js/pageTpl.js"></script>
+<script src="../js/layer.js"></script>
+<!--<script src="../data/data.js"></script>-->
+<script src="../js/common.js"></script>
+<script src="../js/menuList.js"></script>
+<script src="../js/screenLight.js"></script>
+
+</html>
